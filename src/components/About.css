@@ -1,6 +1,6 @@
 .about {
   padding: 50px 20px;
-  background-color: #a7855d;
+  background-color: var(--primary-color-dark);
 }
 
 .about h2 {
