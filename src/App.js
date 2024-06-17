@@ -1,11 +1,11 @@
-import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import CoreSkills from './components/CoreSkills';
-import SelectedWork from './components/SelectedWork';
-import Footer from './components/Footer';
-import './App.css';
+import React from "react";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import CoreSkills from "./components/CoreSkills";
+import SelectedWork from "./components/SelectedWork";
+import Footer from "./components/Footer";
+import "./App.css";
 
 function App() {
   return (
