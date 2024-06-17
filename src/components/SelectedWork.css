@@ -1,0 +1,33 @@
+.selected-work {
+  padding: 50px 20px;
+  background-color: #4c3a2b;
+}
+
+.selected-work h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.selected-work .work-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.selected-work .all-projects {
+  display: block;
+  margin-top: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.selected-work .all-projects:hover {
+  background-color: #fff;
+  color: #4c3a2b;
+}
