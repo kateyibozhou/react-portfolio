@@ -9,7 +9,7 @@ const LandingPage = () => {
     aboutSection.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <section className="landingPage">
+    <div className="landingPage">
       <Header />
       <div className="hero">
         <div className="title">Zhou Yibo</div>
@@ -21,7 +21,7 @@ const LandingPage = () => {
           </button>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
