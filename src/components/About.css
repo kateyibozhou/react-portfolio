@@ -16,10 +16,11 @@
 }
 
 .about p {
-  font-size: 24px;
-  line-height: 50px;
+  font-size: 20px;
+  line-height: 28px;
   padding-right: 200px;
   font-family: "Inter", sans-serif;
   text-align: left;
+  font-weight: 400;
 
 }
