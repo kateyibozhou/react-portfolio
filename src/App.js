@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
+// import Header from "./components/Header";
+import LandingPage from "./components/LandingPage";
 import About from "./components/About";
 import CoreSkills from "./components/CoreSkills";
 import SelectedWork from "./components/SelectedWork";
@@ -10,8 +10,8 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Hero />
+      {/* <Header /> */}
+      <LandingPage />
       <About />
       <CoreSkills />
       <SelectedWork />
