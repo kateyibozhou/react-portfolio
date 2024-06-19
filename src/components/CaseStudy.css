@@ -1,0 +1,13 @@
+.case-study {
+  padding: 20px;
+}
+
+.case-study h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+.case-study p {
+  font-size: 1em;
+  color: #666;
+}
