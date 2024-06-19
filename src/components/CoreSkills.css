@@ -1,21 +1,30 @@
 .core-skills {
-  padding: 50px 20px;
-  background-color: #4c3a2b;
-}
-
-.core-skills h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.core-skills .skills {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-direction: column;
+  gap:32px;
+  padding: 48px 100px;
+  background-color: var(--primary-color-dark);
+  color: var(--secondary_color);
+  font-family: "Inter", sans-serif;
 }
 
-.core-skills p {
-  font-size: 16px;
-  margin-top: 20px;
-  color: #c3a56d;
+.core-skills .title {
+  font-size: 96px;
+  font-family: "Bembo", serif;
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+
+.core-skills .skills-table {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.core-skills .other-skills {
+  font-size: 24px;
+  font-weight: 700;
 }

@@ -1,13 +1,14 @@
-import React from 'react';
-import './SkillCard.css';
+import React from "react";
+import "./SkillCard.css";
 
-const SkillCard = ({ title, description }) => {
+const SkillCard = ({ icon, title, description }) => {
   return (
     <div className="skill-card">
-      <h3>{title}</h3>
+      {icon}
+      <div className="name">{title}</div>
       <p>{description}</p>
     </div>
   );
-}
+};
 
 export default SkillCard;

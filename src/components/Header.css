@@ -2,25 +2,33 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: #4c3a2b;
+  padding: 0px 100px;
+  height: 100px;
+  background-color: var(--primary-color-dark);
 }
 
 .header .logo {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 16px;
+  color: var(--secondary_color);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .header nav ul {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 64px;
 }
 
 .header nav ul li a {
-  color: #fff;
+  color: var(--secondary_color);
+  font-size: 16px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 300;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  
 }
 
 .header nav ul li a:hover {
