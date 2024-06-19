@@ -14,7 +14,7 @@ const SelectedWork = () => {
         <WorkCard title="Designed B2B GTM launch campaign for Philips" description="Designed a workshop to develop an omni-channel campaign strategy to help Philips Air purifier enter into 2 new B2B markets." />
         <WorkCard title="Evangeline the use of customer journey maps" description="Improve work efficiency and understanding of customer experiences through building a single source of truth for the business." />
       </div>
-      <a href="#projects" className="all-projects">ALL PROJECTS</a>
+      <a href="/projects" className="all-projects">ALL PROJECTS</a>
     </section>
   );
 }
