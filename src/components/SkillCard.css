@@ -1,15 +1,19 @@
 .skill-card {
-  padding: 20px;
-  max-width: 300px;
+  padding: 20px 0px;
+  min-width: 260px;
   color: var(--secondary_color);
-  border: 1px solid green;
+  /* border: 1px solid green; */
   text-align: left;
-  height: 200px;
+  min-height: 200px;
+  flex-basis: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
+
 
 .skill-card .name {
   font-size: 40px;
-  height: 52px;
   color: var(--secondary_color);
   font-family: "Bembo", serif;
 

@@ -1,22 +1,30 @@
 .core-skills {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  gap:32px;
   padding: 48px 100px;
   background-color: var(--primary-color-dark);
   color: var(--secondary_color);
+  font-family: "Inter", sans-serif;
 }
 
 .core-skills .title {
   font-size: 96px;
   font-family: "Bembo", serif;
   margin-bottom: 20px;
+  align-self: flex-start;
 }
 
 .core-skills .skills-table {
   display: flex;
+  width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 20px;
+  justify-content: space-between;
+  gap: 28px;
 }
 
+.core-skills .other-skills {
+  font-size: 24px;
+  font-weight: 700;
+}
