@@ -6,6 +6,7 @@ import About from "./components/About";
 import CoreSkills from "./components/CoreSkills";
 import SelectedWork from "./components/SelectedWork";
 import CaseStudy from "./components/CaseStudy";
+import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import "./App.css";
 
@@ -13,7 +14,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Header /> {/* Add this line */}
+        <Header />
         <Routes>
           <Route path="/" element={
             <>
@@ -21,11 +22,12 @@ function App() {
               <About />
               <CoreSkills />
               <SelectedWork />
-              <Footer />
             </>
           } />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/case-study/:id" element={<CaseStudy />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
