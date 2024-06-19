@@ -1,22 +1,21 @@
 import React from "react";
-// import Header from "./components/Header";
-import LandingPage from "./components/LandingPage";
-import About from "./components/About";
-import CoreSkills from "./components/CoreSkills";
-import SelectedWork from "./components/SelectedWork";
-import Footer from "./components/Footer";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import HomePage from "./pages/HomePage/HomePage";
+import Project1 from "./pages/Projects/Project1/Project1";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      {/* <Header /> */}
-      <LandingPage />
-      <About />
-      <CoreSkills />
-      <SelectedWork />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/project1" element={<Project1 />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
