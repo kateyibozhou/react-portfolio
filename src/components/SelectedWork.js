@@ -69,9 +69,9 @@ const SelectedWork = () => {
           />
         ))}
       </div>
-      <button className="all-projects">
+      <a href="/projects" className="all-projects">
         all projects <ArrowRightOutlined />
-      </button>
+      </a>
     </section>
   );
 };
