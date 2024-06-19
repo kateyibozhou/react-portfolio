@@ -1,7 +1,6 @@
 import React from "react";
 import "./LandingPage.css";
 import { ArrowDownOutlined } from "@ant-design/icons";
-import Header from "./Header";
 
 const LandingPage = () => {
   const handleClick = () => {
@@ -10,7 +9,6 @@ const LandingPage = () => {
   };
   return (
     <div className="landingPage">
-      <Header />
       <div className="hero">
         <div className="title">Zhou Yibo</div>
         <div className="subtitle">UX / Service Design / Growth Design</div>
