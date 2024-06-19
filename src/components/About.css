@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap:32px;
+  gap: 48px;
   padding: 48px 100px;
   background-color: var(--primary-color-dark);
   color: var(--secondary_color);
@@ -14,7 +14,7 @@
   font-family: "Bembo", serif;
 }
 
-.about p {
+.about .description {
   font-size: 20px;
   line-height: 28px;
   padding-right: 200px;

@@ -1,17 +1,22 @@
 .selected-work {
-  padding: 50px 20px;
-  background-color: #4c3a2b;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 48px 100px;
+  background-color: var(--primary-color-dark);
+  gap: 48px;
 }
 
-.selected-work h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
+.selected-work .title {
+  font-size: 96px;
+  font-family: "Bembo", serif;
+  color: var(--secondary_color);
 }
 
 .selected-work .work-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 48px;
 }
 
 .selected-work .all-projects {
