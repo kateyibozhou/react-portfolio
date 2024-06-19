@@ -5,6 +5,7 @@
   padding: 48px 100px;
   background-color: var(--primary-color-dark);
   gap: 48px;
+  
 }
 
 .selected-work .title {
@@ -20,19 +21,20 @@
 }
 
 .selected-work .all-projects {
-  display: block;
-  margin-top: 20px;
+  all:unset;
+  text-transform: uppercase;
+  background-color: var(--highlight-coral);
+  font-family: "Inter", sans-serif;
+  border-radius: 30px;
   color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  border: 1px solid #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 16px 36px;
+  font-size: 24px;
   text-align: center;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .selected-work .all-projects:hover {
   background-color: #fff;
-  color: #4c3a2b;
+  color: var(--highlight-coral);
+  cursor:pointer;
 }
