@@ -1,61 +1,30 @@
 import { CaseStudyType } from './CaseStudyType';
+import evpnIncreaseUserRenewalRate from './ProductUX/ExpressVPNIncreaseUserRenewalRate';
+import evpnMobileConversion from './ProductUX/ExpressVPNMobileConversionOptimisation';
+import dBSInfoArch from './ProductUX/DBSInfoArch';
+import evpnEnterpriseDashboard from './ProductUX/ExpressVPNEnterpriseDashboard';
+import shellAPAC from './ProductUX/ShellAPAC';
+import shellMalaysia from './ProductUX/ShellMalaysia';
+import philipsB2BGTM from './Service/PhilipsB2BGTM';
+import philipsB2CVacuum from './Service/PhilipsB2CVacuumLaunch';
+import xiamenHospital from './Service/XiamenHospital';
+import rejoiceBranding from './Branding/Rejoice';
+import sephoraCampaign from './Branding/Sephora';
+import sKII from './Branding/SKII';
 
 const caseStudies: Record<string, CaseStudyType> = {
-  'evpn-increase-user-renewal-rate': {
-    slug: 'evpn-increase-user-renewal-rate',
-    onePager: {
-      title: 'Increase user renewal rate for ExpressVPN',
-      subtitle: 'Objective is to conduct an A/B experiment with new renewal messages. Reframed the initial problem to deliver a design recommendation that increased user renewal rate by 83%.',
-      image: 'path/to/image.jpg',
-      duration: '3 months',
-      role: 'Product Designer',
-      activities: [
-        'Research',
-        'Wireframing',
-        'Prototyping'
-      ],
-      impact: [
-        'Increased user engagement by 20%',
-        'Reduced bounce rate by 15%'
-      ]
-    },
-    steps: [
-      {
-        insights: [
-          'Insight 1',
-          'Insight 2'
-        ],
-        process: [
-          {
-            text: 'Step 1',
-            subTasks: ['Sub-step 1', 'Sub-step 2']
-          },
-          {
-            text: 'Step 2',
-            images: [
-              {
-                relativePath: 'path/to/image.jpg',
-                altText: 'Example Image',
-                caption: 'This is an example image'
-              }
-            ]
-          }
-        ],
-        quote: 'Quote from this step'
-      },
-      // Add more steps if necessary
-    ],
-    learnings: [
-      {
-        text: 'Learning 1',
-        subTasks: ['Sub-learning 1', 'Sub-learning 2']
-      },
-      {
-        text: 'Learning 2'
-      }
-    ]
-  },
-  // Add more case studies with their respective slugs
+  'evpn-increase-user-renewal-rate': evpnIncreaseUserRenewalRate,
+  'evpn-mobile-conversion': evpnMobileConversion,
+  'dbs-info-arch': dBSInfoArch,
+  'evpn-enterprise-dashboard': evpnEnterpriseDashboard,
+  'shell-apac': shellAPAC,
+  'shell-malaysia': shellMalaysia,
+  'philips-b2b-gtm': philipsB2BGTM,
+  'philips-b2c-vacuum': philipsB2CVacuum,
+  'xiamen-hospital': xiamenHospital,
+  'rejoice-branding': rejoiceBranding,
+  'sephora-campaign': sephoraCampaign,
+  'skii': sKII,
 };
 
 export default caseStudies;
