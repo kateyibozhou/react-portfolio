@@ -10,31 +10,31 @@ const evpnIncreaseUserRenewalRate: CaseStudyType = {
         CaseStudyCategory.Research,
       ],
       image: 'path/to/image.jpg',
-      duration: '3 months',
-      role: 'Product Designer',
+      duration: '2023, 3 weeks duration',
+      role: 'Design Lead, User Researcher',
       activities: [
-        'Research',
-        'Wireframing',
-        'Prototyping'
+        'Worked in a squad consisting of Growth Marketers, UX researchers, Content strategists, Engineers, Data analysts.',
+        'Triangulated multiple points of data and proactively advised stakeholders on the best page for experiment.',
+        'Redesigned the renewal banner on desktop web and mobile web pages accounting for 4 renewal scenarios.',
       ],
       impact: [
-        'Increased user engagement by 20%',
-        'Reduced bounce rate by 15%'
+        'Design increased renewal revenue by 83%.',
+        'This research identified the Edit Subscription page as the optimal location for the experiment. This data-driven approach helped focus the team\'s efforts and resources on the most impactful area',
+        'Variant design generated +127k after 7 days of experiment compared to control design (69k).',
+        'Design is shipped globally.'
       ]
     },
     steps: [
       {
         insights: [
-          'Insight 1',
-          'Insight 2'
+          'Growth marketers want to design on the Edit Subscription page, but it is too low down the funnel to create much impact on user behavior.',
         ],
         process: [
           {
-            text: 'Step 1',
-            subTasks: ['Sub-step 1', 'Sub-step 2']
+            text: 'Triangulating multiple data points (from Google Analytics, Customer Journey Map screen flows and VOTC research), I convinced them to conduct the experimentation on Dashboard because of higher volumes of traffic.',
           },
           {
-            text: 'Step 2',
+            text: 'Looked at screen flows to determine location in the sale funnel.',
             images: [
               {
                 relativePath: 'path/to/image.jpg',
