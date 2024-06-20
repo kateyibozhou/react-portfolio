@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import caseStudies from './CaseStudies/CaseStudiesData';
-import { CaseStudyType } from './CaseStudies/CaseStudyType';
+import { CaseStudyType, CaseStudyWork } from './CaseStudies/CaseStudyType';
 import './CaseStudy.css';
 
 interface RouteParams {
   id: string;
+  [key: string]: string | undefined;
 }
 
 const CaseStudy: React.FC = () => {
