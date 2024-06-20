@@ -5,12 +5,12 @@
   padding: 48px 100px;
   background-color: var(--primary-color-dark);
   color: var(--secondary_color);
-  font-family: "Inter", sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 .core-skills .title {
   font-size: 96px;
-  font-family: "Bembo", serif;
+  font-family: "Fraunces", serif;
   align-self: flex-start;
 }
 

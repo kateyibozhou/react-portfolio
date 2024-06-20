@@ -10,7 +10,7 @@
 
 .selected-work .title {
   font-size: 96px;
-  font-family: "Bembo", serif;
+  font-family: "Fraunces", serif;
   color: var(--secondary_color);
 }
 
@@ -24,7 +24,7 @@
   all:unset;
   text-transform: uppercase;
   background-color: var(--highlight-coral);
-  font-family: "Inter", sans-serif;
+  font-family: "Work Sans", sans-serif;
   border-radius: 30px;
   color: #fff;
   padding: 16px 36px;

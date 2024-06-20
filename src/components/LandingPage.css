@@ -19,7 +19,7 @@
   font-weight: 400;
   padding: 24px;
   color: var(--primary-color-light);
-  font-family: "Bembo", serif;
+  font-family: "Fraunces", serif;
 }
 
 .hero .subtitle {
@@ -27,7 +27,7 @@
   padding: 24px;
   font-weight: 700;
   color: var(--primary-color-light);
-  font-family: "Inter", sans-serif;
+  font-family: "Work Sans", sans-serif;
   
 }
 .hero .see-more {
@@ -44,7 +44,7 @@
 .hero .see-more button{
   all: unset;
   color: var(--highlight-coral);
-  font-family: "Inter", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 24px;
   font-weight: 300;
   cursor: pointer;

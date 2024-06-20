@@ -10,7 +10,7 @@
 .header .logo {
   font-size: 16px;
   color: var(--secondary_color);
-  font-family: "Inter", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -35,7 +35,7 @@
   font-size: 16px;
   text-decoration: none;
   font-weight: 300;
-  font-family: "Inter", sans-serif;
+  font-family: "Work Sans", sans-serif;
   text-transform: uppercase;
 }
 
