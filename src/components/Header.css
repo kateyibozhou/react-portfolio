@@ -15,6 +15,15 @@
   text-transform: uppercase;
 }
 
+.logo-link {
+  text-decoration: none;
+}
+
+.logo-link:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--secondary_color);
+}
+
 .header nav ul {
   list-style: none;
   display: flex;
@@ -28,7 +37,6 @@
   font-weight: 300;
   font-family: "Inter", sans-serif;
   text-transform: uppercase;
-  
 }
 
 .header nav ul li a:hover {
