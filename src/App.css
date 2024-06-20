@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Inter:wght@100..900&display=swap');
 .App {
   text-align: center;
 
@@ -48,9 +47,4 @@ html {
   --primary-color-light: #fffff0;
   --secondary_color: #f5f5dc;
   --highlight-coral:#ff7f50;
-}
-
-@font-face {
-  font-family: 'Bembo', serif;
-  src: url(./fonts/et-book-roman-line-figures.ttf) format("truetype");
 }
