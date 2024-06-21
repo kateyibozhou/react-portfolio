@@ -1,5 +1,3 @@
-// src/components/CaseStudy.tsx
-
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
@@ -21,24 +19,27 @@ const CaseStudyContainer = styled.div`
 `;
 
 const OnePagerSummary = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
   text-align: center;
-  margin-bottom: 20px;
   background-color: ${({ theme }) => theme.colors.primaryDark};
   color: ${({ theme }) => theme.colors.primaryLight};
   padding: 40px 20px;
-  border-radius: 8px;
 `;
 
 const Header = styled.div`
   span {
     display: block;
-    font-size: 0.85em;
+    font-size: 1em;
     color: ${({ theme }) => theme.colors.primaryLight};
   }
 
   h1 {
     margin: 10px 0;
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: bold;
   }
 
@@ -62,6 +63,7 @@ const Details = styled.div`
   justify-content: space-around;
   margin-top: 20px;
   text-align: left;
+  width: 100%;
 
   > div {
     flex: 1;
@@ -196,7 +198,7 @@ const CaseStudy: React.FC = () => {
   };
 
   return (
-    <CaseStudyContainer>
+    <div>
       <OnePagerSummary>
         <Header>
           <span>{caseStudy.onePager.duration}</span>
@@ -227,27 +229,29 @@ const CaseStudy: React.FC = () => {
           </div>
         </Details>
       </OnePagerSummary>
-      <Steps>
-        {caseStudy.steps.map((step, index) => (
-          <Step key={index}>
-            <h4>Step {index + 1}</h4>
-            <h5>Insights</h5>
-            <ul>
-              {step.insights.map((insight, idx) => (
-                <li key={idx}>{insight}</li>
-              ))}
-            </ul>
-            <h5>Process</h5>
-            <ul>{renderProcess(step.process)}</ul>
-            <blockquote>{step.quote}</blockquote>
-          </Step>
-        ))}
-      </Steps>
-      <Learnings>
-        <h4>Learnings</h4>
-        <ul>{renderLearnings(caseStudy.learnings)}</ul>
-      </Learnings>
-    </CaseStudyContainer>
+      <CaseStudyContainer>
+        <Steps>
+          {caseStudy.steps.map((step, index) => (
+            <Step key={index}>
+              <h4>Step {index + 1}</h4>
+              <h5>Insights</h5>
+              <ul>
+                {step.insights.map((insight, idx) => (
+                  <li key={idx}>{insight}</li>
+                ))}
+              </ul>
+              <h5>Process</h5>
+              <ul>{renderProcess(step.process)}</ul>
+              <blockquote>{step.quote}</blockquote>
+            </Step>
+          ))}
+        </Steps>
+        <Learnings>
+          <h4>Learnings</h4>
+          <ul>{renderLearnings(caseStudy.learnings)}</ul>
+        </Learnings>
+      </CaseStudyContainer>
+    </div>
   );
 };
 
