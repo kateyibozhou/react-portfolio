@@ -9,7 +9,11 @@ const philipsB2CVacuum: CaseStudyType = {
         CaseStudyCategory.ProductDesign,
         CaseStudyCategory.Research,
       ],
-      image: 'path/to/image.jpg',
+      image: {
+        relativePath: '../../assets/images/case-studies/product-ux/desktop/hero.svg',
+        altText: 'Example Image',
+        caption: 'This is an example image'
+      },
       duration: '3 months',
       role: 'Product Designer',
       activities: [

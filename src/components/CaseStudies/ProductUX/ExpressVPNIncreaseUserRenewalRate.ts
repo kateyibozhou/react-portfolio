@@ -9,7 +9,11 @@ const evpnIncreaseUserRenewalRate: CaseStudyType = {
         CaseStudyCategory.ProductDesign,
         CaseStudyCategory.Research,
       ],
-      image: 'path/to/image.jpg',
+      image: {
+        relativePath: '../../../assets/images/case-studies/product-ux/evpn-increase-user-renewal-rate/desktop/hero.svg',
+        altText: 'Example Image',
+        caption: 'This is an example image'
+      },
       duration: '2023, 3 weeks duration',
       role: 'Design Lead, User Researcher',
       activities: [
