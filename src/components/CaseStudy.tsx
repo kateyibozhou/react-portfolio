@@ -10,12 +10,11 @@ interface RouteParams {
 }
 
 const CaseStudyContainer = styled.div`
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: ${({ theme }) => theme.colors.white};
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin: calc(0.5rem + 2vw); 
+  padding: calc(0.5rem + 2vw);
   border-radius: 8px;
+  max-width: 100%; // TODO: Change this later after adding images
 `;
 
 const OnePagerSummary = styled.div`
@@ -24,7 +23,6 @@ const OnePagerSummary = styled.div`
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  text-align: center;
   background-color: ${({ theme }) => theme.colors.primaryDark};
   color: ${({ theme }) => theme.colors.primaryLight};
   padding: 40px 20px;
@@ -51,7 +49,7 @@ const Header = styled.div`
   }
 `;
 
-const MainImage = styled.img`
+const HeroImage = styled.img`
   width: 100%;
   height: auto;
   margin: 20px 0;
@@ -62,7 +60,6 @@ const Details = styled.div`
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
-  text-align: left;
   width: 100%;
 
   > div {
@@ -88,6 +85,7 @@ const Details = styled.div`
 `;
 
 const Steps = styled.div`
+  max-width: 50%; // TODO: Change this later after adding images
   margin-top: 40px;
 `;
 
@@ -115,15 +113,16 @@ const Step = styled.div`
   blockquote {
     margin: 20px 0;
     padding: 10px 20px;
-    background-color: ${({ theme }) => theme.colors.background};
     border-left: 5px solid ${({ theme }) => theme.colors.quote};
     font-style: italic;
-    color: ${({ theme }) => theme.colors.secondary};
+    font-size: 1.5em;
+    font-weight: 600;
+    color: ${({ theme }) => theme.colors.primaryDark};
+    width: 80vw;
   }
 `;
 
 const ImageContainer = styled.div`
-  text-align: center;
   margin: 20px 0;
 `;
 
@@ -141,6 +140,7 @@ const Caption = styled.p`
 
 const Learnings = styled.div`
   margin-top: 40px;
+  max-width: 50%; // TODO: Change this later after adding images
 `;
 
 const CaseStudy: React.FC = () => {
@@ -205,7 +205,7 @@ const CaseStudy: React.FC = () => {
           <h1>{caseStudy.onePager.title}</h1>
           <h2>{caseStudy.onePager.subtitle}</h2>
         </Header>
-        <MainImage src={caseStudy.onePager.image} alt={caseStudy.onePager.title} />
+        <HeroImage src={caseStudy.onePager.image.relativePath} alt={caseStudy.onePager.image.altText} />
         <Details>
           <div className="role">
             <h3>Role</h3>
