@@ -38,7 +38,7 @@ export interface Step {
     title: string;
     subtitle: string;
     category: CaseStudyCategory[];
-    image: string;
+    image: CaseStudyImage;
     duration: string;
     role: string;
     activities: string[];
