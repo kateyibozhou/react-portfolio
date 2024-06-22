@@ -11,6 +11,8 @@
   color: #343A40;
   font-family: "Work Sans", sans-serif;
   box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2);
+
+  position: relative;
 }
 
 .work-card:hover {
@@ -30,4 +32,12 @@
   font-size: 16px;
   line-height: 24px;
   font-weight:400;
+}
+
+.work-card .tags {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 24px;
+  gap: 4px;
 }

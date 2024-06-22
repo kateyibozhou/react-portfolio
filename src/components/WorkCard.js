@@ -1,6 +1,8 @@
 import React from "react";
 import { Flex, Tag } from "antd";
 import { useNavigate } from "react-router-dom";
+import { TagColors } from "../utils/SelectedWorkTags";
+
 import "./WorkCard.css";
 
 const WorkCard = ({ title, description, tags, path }) => {
@@ -12,13 +14,13 @@ const WorkCard = ({ title, description, tags, path }) => {
     <div className="work-card" onClick={handleClick}>
       <div className="name">{title}</div>
       <div className="description">{description}</div>
-      {/* <Flex gap="4px 0" wrap>
+      <div className="tags">
         {tags?.map((t) => (
-          <Tag bordered={false} color="green">
+          <Tag style={{ color: "black" }} bordered={false} color={TagColors[t]}>
             {t}
           </Tag>
         ))}
-      </Flex> */}
+      </div>
     </div>
   );
 };
