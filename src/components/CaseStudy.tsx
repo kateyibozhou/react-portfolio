@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import styled from 'styled-components';
-import caseStudies from './CaseStudies/CaseStudiesData';
-import { CaseStudyType, CaseStudyWork } from './CaseStudies/CaseStudyType';
-
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import styled from "styled-components";
+import caseStudies from "./CaseStudies/CaseStudiesData";
+import { CaseStudyType, CaseStudyWork } from "./CaseStudies/CaseStudyType";
 interface RouteParams {
   id: string;
   [key: string]: string | undefined;
@@ -20,7 +19,7 @@ const FullViewPortContainer = styled.section`
 
 const CaseStudyContainer = styled.div`
   text-align: left;
-  margin: calc(0.5rem + 2vw); 
+  margin: calc(0.5rem + 2vw);
   padding: calc(0.5rem + 2vw);
   border-radius: 8px;
   max-width: 100%; // TODO: Change this later after adding images
@@ -84,7 +83,8 @@ const Details = styled.div`
     color: ${({ theme }) => theme.colors.primaryLight};
   }
 
-  p, ul {
+  p,
+  ul {
     margin: 0;
     color: ${({ theme }) => theme.colors.primaryLight};
   }
@@ -163,7 +163,11 @@ const CaseStudy: React.FC = () => {
   }, [id]);
 
   if (!caseStudy) {
-    return <CaseStudyContainer><h1>404: Case Study Not Found</h1></CaseStudyContainer>;
+    return (
+      <CaseStudyContainer>
+        <h1>404: Case Study Not Found</h1>
+      </CaseStudyContainer>
+    );
   }
 
   const renderProcess = (process: CaseStudyWork[]) => {
@@ -177,12 +181,13 @@ const CaseStudy: React.FC = () => {
             ))}
           </ul>
         )}
-        {processItem.images && processItem.images.map((image, imgIdx) => (
-          <ImageContainer key={imgIdx}>
-            <Image src={image.relativePath} alt={image.altText} />
-            <Caption>{image.caption}</Caption>
-          </ImageContainer>
-        ))}
+        {processItem.images &&
+          processItem.images.map((image, imgIdx) => (
+            <ImageContainer key={imgIdx}>
+              <Image src={image.relativePath} alt={image.altText} />
+              <Caption>{image.caption}</Caption>
+            </ImageContainer>
+          ))}
       </li>
     ));
   };
@@ -198,16 +203,16 @@ const CaseStudy: React.FC = () => {
             ))}
           </ul>
         )}
-        {learning.images && learning.images.map((image, imgIdx) => (
-          <ImageContainer key={imgIdx}>
-            <Image src={image.relativePath} alt={image.altText} />
-            <Caption>{image.caption}</Caption>
-          </ImageContainer>
-        ))}
+        {learning.images &&
+          learning.images.map((image, imgIdx) => (
+            <ImageContainer key={imgIdx}>
+              <Image src={image.relativePath} alt={image.altText} />
+              <Caption>{image.caption}</Caption>
+            </ImageContainer>
+          ))}
       </li>
     ));
   };
-
   return (
     <FullViewPortContainer>
       <OnePagerSummary>
@@ -216,7 +221,10 @@ const CaseStudy: React.FC = () => {
           <h1>{caseStudy.onePager.title}</h1>
           <h2>{caseStudy.onePager.subtitle}</h2>
         </CaseStudyHeader>
-        <HeroImage src={caseStudy.onePager.image.relativePath} alt={caseStudy.onePager.image.altText} />
+        <HeroImage
+          src={require(`../assets/images/case-studies${caseStudy.onePager.image.relativePath}`)}
+          alt={caseStudy.onePager.image.altText}
+        />
         <Details>
           <div className="role">
             <h3>Role</h3>
@@ -262,6 +270,13 @@ const CaseStudy: React.FC = () => {
           <ul>{renderLearnings(caseStudy.learnings)}</ul>
         </Learnings>
       </CaseStudyContainer>
+      {/* example of inserting video */}
+      <video controls autoPlay loop muted>
+        <source
+          src={require("../assets/images/case-studies/product-ux/evpn-increase-user-renewal-rate/desktop/4_prototype.mov")}
+          type="video/mp4"
+        />
+      </video>
     </FullViewPortContainer>
   );
 };
