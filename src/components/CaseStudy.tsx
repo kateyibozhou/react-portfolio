@@ -9,6 +9,15 @@ interface RouteParams {
   [key: string]: string | undefined;
 }
 
+const FullViewPortContainer = styled.section`
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: space-between;
+  align-items: stretch;
+`;
+
 const CaseStudyContainer = styled.div`
   text-align: left;
   margin: calc(0.5rem + 2vw); 
@@ -18,17 +27,18 @@ const CaseStudyContainer = styled.div`
 `;
 
 const OnePagerSummary = styled.div`
+  padding: calc(1rem + 4vw);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: left;
+  align-items: space-between;
   justify-content: center;
   min-height: 100vh;
   background-color: ${({ theme }) => theme.colors.primaryDark};
   color: ${({ theme }) => theme.colors.primaryLight};
-  padding: 40px 20px;
 `;
 
-const Header = styled.div`
+const CaseStudyHeader = styled.div`
   span {
     display: block;
     font-size: 1em;
@@ -36,14 +46,14 @@ const Header = styled.div`
   }
 
   h1 {
-    margin: 10px 0;
+    margin: 0.6rem 0;
     font-size: 3em;
     font-weight: bold;
   }
 
   h2 {
-    margin: 10px 0;
-    font-size: 1.5em;
+    margin: 0.6rem 0;
+    font-size: 1.3em;
     font-weight: normal;
     color: ${({ theme }) => theme.colors.primaryLight};
   }
@@ -57,6 +67,7 @@ const HeroImage = styled.img`
 `;
 
 const Details = styled.div`
+  flex-grow: 4;
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
@@ -198,13 +209,13 @@ const CaseStudy: React.FC = () => {
   };
 
   return (
-    <div>
+    <FullViewPortContainer>
       <OnePagerSummary>
-        <Header>
+        <CaseStudyHeader>
           <span>{caseStudy.onePager.duration}</span>
           <h1>{caseStudy.onePager.title}</h1>
           <h2>{caseStudy.onePager.subtitle}</h2>
-        </Header>
+        </CaseStudyHeader>
         <HeroImage src={caseStudy.onePager.image.relativePath} alt={caseStudy.onePager.image.altText} />
         <Details>
           <div className="role">
@@ -251,7 +262,7 @@ const CaseStudy: React.FC = () => {
           <ul>{renderLearnings(caseStudy.learnings)}</ul>
         </Learnings>
       </CaseStudyContainer>
-    </div>
+    </FullViewPortContainer>
   );
 };
 
