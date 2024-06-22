@@ -6,7 +6,8 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "./dist",
-    "lib": ["ES6", "DOM"]       // Ensure ES6 and DOM libraries are included
+    "lib": ["ES6", "DOM"],       // Ensure ES6 and DOM libraries are included
+    "jsx": "react-jsx"
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
