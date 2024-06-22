@@ -4,6 +4,7 @@ export const theme: DefaultTheme = {
   colors: {
     primaryDark: '#897143',  // --primary-color-dark
     primaryLight: '#fffff0',  // --primary-color-light
+    workCardDarkText: '#343A40',  // Dark text color for WorkCard component
     secondary: '#f5f5dc',  // --secondary_color
     highlight: '#ff7f50',  // --highlight-coral
     background: '#f5f5f5',  // Light gray background (from previous theme)
