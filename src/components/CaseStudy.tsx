@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import caseStudies from "./CaseStudies/CaseStudiesData";
 import { CaseStudyType, CaseStudyWork } from "./CaseStudies/CaseStudyType";
-
 interface RouteParams {
   id: string;
   [key: string]: string | undefined;
@@ -260,6 +259,14 @@ const CaseStudy: React.FC = () => {
           <ul>{renderLearnings(caseStudy.learnings)}</ul>
         </Learnings>
       </CaseStudyContainer>
+
+      {/* example of inserting video */}
+      <video controls autoPlay loop muted>
+        <source
+          src={require("../assets/images/case-studies/product-ux/evpn-increase-user-renewal-rate/desktop/4_prototype.mov")}
+          type="video/mp4"
+        />
+      </video>
     </div>
   );
 };
