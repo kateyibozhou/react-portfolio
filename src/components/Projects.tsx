@@ -1,7 +1,7 @@
 import React from 'react';
 import './SelectedWork.css';
 import styled from 'styled-components';
-import WorkCard from './WorkCard';
+import WorkCard from './AltWorkCard';
 
 const ProjectCategoryTitle = styled.h2`
   font-size: 1.5rem;
@@ -19,16 +19,17 @@ const AutoGrid = styled.div`
 `;
 
 const AutoGridWrapper = styled.section`
-  max-width: 65rem;
+  width: 80cqw;
   margin: 0 auto;
   padding: 0 1rem;
+  border: 1px solid ${({ theme }) => theme.colors.primaryLight};
 `;
 
 const Projects = () => {
   return (
     <section className="selected-work">
       <ProjectCategoryTitle>Product/UX Design</ProjectCategoryTitle>
-      <AutoGridWrapper>
+      {/* // <AutoGridWrapper> */}
       <AutoGrid>
         <WorkCard 
           title="Increase ExpressVPN user renewal rate by 83%" 
@@ -56,9 +57,9 @@ const Projects = () => {
           path="/case-study/shell-malaysia"
         />
         </AutoGrid>
-      </AutoGridWrapper>
+      {/* </AutoGridWrapper> */}
       <ProjectCategoryTitle>Service Design</ProjectCategoryTitle>
-      <AutoGridWrapper>
+      {/* <AutoGridWrapper> */}
       <AutoGrid>
         <WorkCard 
           title="Designed B2B GTM launch campaign for Philips" 
@@ -81,9 +82,9 @@ const Projects = () => {
           path="/case-study/xiamen-hospital"
         />
       </AutoGrid>
-      </AutoGridWrapper>
+      {/* </AutoGridWrapper> */}
       <ProjectCategoryTitle>Branding & Packaging</ProjectCategoryTitle>
-      <AutoGridWrapper>
+      {/* <AutoGridWrapper> */}
       <AutoGrid>
         <WorkCard 
           title="Rejoice branding and packaging for GC and APAC" 
@@ -101,7 +102,7 @@ const Projects = () => {
           path="/case-study/sephora-campaign"
         />
       </AutoGrid>
-      </AutoGridWrapper>
+      {/* </AutoGridWrapper> */}
     </section>
   );
 }
