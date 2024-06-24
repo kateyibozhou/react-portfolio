@@ -8,7 +8,7 @@ const CardContainer = styled.div`
   color: ${({ theme }) => theme.colors.workCardDarkText};
   text-align: left;
   border-radius: 0.8rem;
-  box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.2);
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
   padding: 1rem;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
