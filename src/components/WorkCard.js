@@ -15,7 +15,7 @@ const WorkCard = ({ title, description, tags, path, image_path }) => {
       className="work-card"
       onClick={handleClick}
       style={{
-        backgroundImage: require(`../assets/images/case-studies/product-ux/evpn-increase-user-renewal-rate/desktop/hero.png`),
+        backgroundImage: `url(${image_path})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
