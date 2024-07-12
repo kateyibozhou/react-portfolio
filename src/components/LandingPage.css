@@ -13,12 +13,6 @@
   z-index: -10; /* Ensure it's behind other content */
 }
 
-canvas{
-  background: black;
-  width: 100vw;
-  height: 100vh;
-}
-
 .hero {
   flex-grow: 1;
   display: flex;
@@ -58,7 +52,7 @@ canvas{
 }
 .hero .see-more button{
   all: unset;
-  color: var(--highlight-coral);
+  color: var(--primary-color-light);
   font-family: "Work Sans", sans-serif;
   font-size: 24px;
   font-weight: 300;
