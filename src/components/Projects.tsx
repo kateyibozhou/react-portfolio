@@ -29,7 +29,6 @@ const Projects = () => {
   return (
     <section className="selected-work">
       <ProjectCategoryTitle>Product/UX Design</ProjectCategoryTitle>
-      {/* // <AutoGridWrapper> */}
       <AutoGrid>
         <WorkCard 
           title="Increase ExpressVPN user renewal rate by 83%" 
@@ -40,6 +39,16 @@ const Projects = () => {
           title="Optimise ExpressVPN checkout page for mobile" 
           description="Created 6% uplift in average order value (AOV) of the checkout page by improving page design by having a mobile-first approach." 
           path="/case-study/evpn-mobile-conversion"
+        />
+        <WorkCard
+          title="DBS Info Architecture" 
+          description="Designed a new information architecture for DBS to improve user experience and increase user engagement." 
+          path="/case-study/dbs-info-arch"
+        />
+        <WorkCard
+          title="Evanagelise the use of customer journey maps" 
+          description='Develop and promote the use of the customer journey map (CJM) in the design team as a single source of truth to understand user behaviour, team dependencies when working on designs.'
+          path="/case-study/evpn-evangelise-customer-journey-maps"
         />
         <WorkCard 
           title="Enterprise dashboard MVP" 
@@ -57,24 +66,17 @@ const Projects = () => {
           path="/case-study/shell-malaysia"
         />
         </AutoGrid>
-      {/* </AutoGridWrapper> */}
       <ProjectCategoryTitle>Service Design</ProjectCategoryTitle>
-      {/* <AutoGridWrapper> */}
       <AutoGrid>
         <WorkCard 
           title="Designed B2B GTM launch campaign for Philips" 
           description="Designed a workshop to develop an omni-channel campaign strategy to help Philips Air purifier enter into 2 new B2B markets." 
-          path="/case-study/philips-b2b-gtm-campaign"
-        />
-        <WorkCard 
-          title="Evangelise the use of customer journey maps" 
-          description="Improved work efficiency and understanding of customer experiences through building a single source of truth for the business." 
-          path="/case-study/customer-journey-maps"
+          path="/case-study/philips-gtm"
         />
         <WorkCard 
           title="Design B2C launch campaign for Philips Vacuum" 
           description="Write description here" 
-          path="/case-study/philips-b2-vacuum"
+          path="/case-study/philips-vacuum"
         />
         <WorkCard 
           title="Xiamen Hospital Communications Design" 
@@ -82,9 +84,7 @@ const Projects = () => {
           path="/case-study/xiamen-hospital"
         />
       </AutoGrid>
-      {/* </AutoGridWrapper> */}
       <ProjectCategoryTitle>Branding & Packaging</ProjectCategoryTitle>
-      {/* <AutoGridWrapper> */}
       <AutoGrid>
         <WorkCard 
           title="Rejoice branding and packaging for GC and APAC" 
@@ -102,7 +102,6 @@ const Projects = () => {
           path="/case-study/sephora-campaign"
         />
       </AutoGrid>
-      {/* </AutoGridWrapper> */}
     </section>
   );
 }
