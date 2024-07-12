@@ -53,8 +53,8 @@ const SelectedWork = () => {
 
   return (
     <section className="selected-work">
-      <div className="title">Selected work</div>
-      <div className="work-cards">
+      <div className="title" data-aos="fade-right">Selected work</div>
+      <div className="work-cards" data-aos="fade-left">
         {projects.map((project) => (
           <WorkCard
             title={project.title}
@@ -64,7 +64,7 @@ const SelectedWork = () => {
           />
         ))}
       </div>
-      <a href="/projects" className="all-projects">
+      <a href="/projects" className="all-projects" data-aos="fade-up">
         all projects <ArrowRightOutlined />
       </a>
     </section>
