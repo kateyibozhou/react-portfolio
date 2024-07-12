@@ -1,7 +1,7 @@
 export interface Step {
     insights: string[];
     process: CaseStudyWork[];
-    quote: string;
+    quote?: string;
   }
 
   export interface CaseStudyWork {
@@ -28,6 +28,8 @@ export interface Step {
     Research = 'Research',
     ServiceDesign = 'Service Design',
     BrandingPackaging = 'Branding & Packaging',
+    CampaignManagement = 'Campaign Management',
+    CommunicationsDesign = 'Communications Design',
     StrategyDesign = 'Strategy Design',
     GrowthDesign = 'Growth Design',
     Illustration = 'Illustration',
@@ -47,6 +49,6 @@ export interface Step {
   
   export interface CaseStudyType {
     onePager: OnePager;
-    steps: Step[];
-    learnings: CaseStudyWork[];
+    steps?: Step[];
+    learnings?: CaseStudyWork[];
   }

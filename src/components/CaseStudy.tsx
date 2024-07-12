@@ -65,6 +65,10 @@ const HeroImage = styled.img`
   border-radius: 8px;
 `;
 
+const NumberedList = styled.ul`
+  list-style-type: decimal;
+`;
+
 const Details = styled.div`
   flex-grow: 4;
   display: flex;
@@ -175,11 +179,11 @@ const CaseStudy: React.FC = () => {
       <li key={idx}>
         <p>{processItem.text}</p>
         {processItem.subTasks && (
-          <ul>
+          <NumberedList>
             {processItem.subTasks.map((subTask, subIdx) => (
               <li key={subIdx}>{subTask}</li>
             ))}
-          </ul>
+          </NumberedList>
         )}
         {processItem.images &&
           processItem.images.map((image, imgIdx) => (
@@ -192,16 +196,16 @@ const CaseStudy: React.FC = () => {
     ));
   };
 
-  const renderLearnings = (learnings: CaseStudyWork[]) => {
-    return learnings.map((learning, index) => (
+  const renderLearnings = (learnings: CaseStudyWork[] | undefined) => {
+    return (learnings ?? []).map((learning, index) => (
       <li key={index}>
         <p>{learning.text}</p>
         {learning.subTasks && (
-          <ul>
+          <NumberedList>
             {learning.subTasks.map((subLearning, subIdx) => (
               <li key={subIdx}>{subLearning}</li>
             ))}
-          </ul>
+          </NumberedList>
         )}
         {learning.images &&
           learning.images.map((image, imgIdx) => (
@@ -250,7 +254,7 @@ const CaseStudy: React.FC = () => {
       </OnePagerSummary>
       <CaseStudyContainer>
         <Steps>
-          {caseStudy.steps.map((step, index) => (
+          {caseStudy.steps && caseStudy.steps.map((step, index) => (
             <Step key={index}>
               <h4>Step {index + 1}</h4>
               <h5>Insights</h5>
@@ -261,14 +265,16 @@ const CaseStudy: React.FC = () => {
               </ul>
               <h5>Process</h5>
               <ul>{renderProcess(step.process)}</ul>
-              <blockquote>{step.quote}</blockquote>
+              {step.quote && <blockquote>{step.quote}</blockquote>}
             </Step>
           ))}
         </Steps>
-        <Learnings>
-          <h4>Learnings</h4>
-          <ul>{renderLearnings(caseStudy.learnings)}</ul>
-        </Learnings>
+        {caseStudy.learnings && (
+          <Learnings>
+            <h4>Learnings</h4>
+            <ul>{renderLearnings(caseStudy.learnings)}</ul>
+          </Learnings>
+        )}
       </CaseStudyContainer>
       {/* example of inserting video */}
       <video controls autoPlay loop muted>

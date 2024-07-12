@@ -11,6 +11,7 @@ import xiamenHospital from './Service/XiamenHospital';
 import rejoiceBranding from './Branding/Rejoice';
 import sephoraCampaign from './Branding/Sephora';
 import sKII from './Branding/SKII';
+import evpnEvangeliseCustomerJourneyMaps from './ProductUX/EvangeliseUseOfCustomerJourneyMaps';
 
 const caseStudies: Record<string, CaseStudyType> = {
   'evpn-increase-user-renewal-rate': evpnIncreaseUserRenewalRate,
@@ -19,12 +20,13 @@ const caseStudies: Record<string, CaseStudyType> = {
   'evpn-enterprise-dashboard': evpnEnterpriseDashboard,
   'shell-apac': shellAPAC,
   'shell-malaysia': shellMalaysia,
-  'philips-b2b-gtm': philipsB2BGTM,
-  'philips-b2c-vacuum': philipsB2CVacuum,
+  'philips-gtm': philipsB2BGTM,
+  'philips-vacuum': philipsB2CVacuum,
   'xiamen-hospital': xiamenHospital,
   'rejoice-branding': rejoiceBranding,
   'sephora-campaign': sephoraCampaign,
   'skii': sKII,
+  'evpn-evangelise-customer-journey-maps': evpnEvangeliseCustomerJourneyMaps,
 };
 
 export default caseStudies;
