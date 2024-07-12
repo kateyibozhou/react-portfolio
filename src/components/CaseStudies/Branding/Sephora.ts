@@ -2,65 +2,34 @@ import { CaseStudyCategory, CaseStudyType } from '../CaseStudyType';
 
 const sephoraCampaign: CaseStudyType = {
     onePager: {
-      title: 'Increase user renewal rate for ExpressVPN',
-      subtitle: 'Objective is to conduct an A/B experiment with new renewal messages. Reframed the initial problem to deliver a design recommendation that increased user renewal rate by 83%.',
+      title: 'Sephora Campaign Management and Optimisation',
+      subtitle: 'Set the design direction and managed the timeline for major regional sale campaigns across onsite and retail platforms.',
       category: [
-        CaseStudyCategory.UX,
-        CaseStudyCategory.ProductDesign,
-        CaseStudyCategory.Research,
+        CaseStudyCategory.CampaignManagement,
+        CaseStudyCategory.BrandingPackaging,
+        CaseStudyCategory.GrowthDesign
       ],
       image: {
-        relativePath: '../../assets/images/case-studies/product-ux/desktop/hero.svg',
-        altText: 'Example Image',
-        caption: 'This is an example image'
+        relativePath: '/product-ux/evpn-increase-user-renewal-rate/desktop/hero.png',
+        altText: '',
+        caption: ''
       },
       duration: '3 months',
-      role: 'Product Designer',
+      role: 'Design Lead, Project Manager',
       activities: [
-        'Research',
-        'Wireframing',
-        'Prototyping'
+        'Successfully set the design direction and managed the timeline for major regional sale campaigns across onsite and retail platforms, ensuring a cohesive and impactful visual experience for customers.',
+        'Planned and coordinated various campaign timelines, guaranteeing that all assets were designed and ready for deployment according to schedule.',
+        'Supervised a team of designers in the creation and delivery of campaign assets, providing guidance and feedback to ensure high-quality visuals that aligned with the overall design direction.',
+        'Conducted A/B testing on campaign assets to gather data-driven insights and optimise future campaigns.'
       ],
       impact: [
-        'Increased user engagement by 20%',
-        'Reduced bounce rate by 15%'
+        'The streamlined campaign management resulted in a 20% increase in campaign ROI and a 18% uplift in customer engagement.',
+        'The efficient project management led to a 33% reduction in campaign launch delays.',
+        'The effective leadership and mentorship resulted in a 40% increase in designer productivity and a 23% reduction in revision cycles.',
+        'The iterative approach to design optimisation led to a 31% improvement in click-through rates and a 27% increase in conversion rates for subsequent campaigns.',
+        'The success of the regional sale campaign design management established a new standard for campaign planning and execution within the organization.',      
       ]
     },
-    steps: [
-      {
-        insights: [
-          'Insight 1',
-          'Insight 2'
-        ],
-        process: [
-          {
-            text: 'Step 1',
-            subTasks: ['Sub-step 1', 'Sub-step 2']
-          },
-          {
-            text: 'Step 2',
-            images: [
-              {
-                relativePath: 'path/to/image.jpg',
-                altText: 'Example Image',
-                caption: 'This is an example image'
-              }
-            ]
-          }
-        ],
-        quote: 'Quote from this step'
-      },
-      // Add more steps if necessary
-    ],
-    learnings: [
-      {
-        text: 'Learning 1',
-        subTasks: ['Sub-learning 1', 'Sub-learning 2']
-      },
-      {
-        text: 'Learning 2'
-      }
-    ]
   }
 
 export default sephoraCampaign;

@@ -2,65 +2,31 @@ import { CaseStudyCategory, CaseStudyType } from '../CaseStudyType';
 
 const rejoiceBranding: CaseStudyType = {
     onePager: {
-      title: 'Increase user renewal rate for ExpressVPN',
-      subtitle: 'Objective is to conduct an A/B experiment with new renewal messages. Reframed the initial problem to deliver a design recommendation that increased user renewal rate by 83%.',
+      title: 'Rejoice branding and packaging for GC and APAC',
+      subtitle: 'Created the brand vision for Rejoice CG and APAC, refreshing packaging designs for various product ranges.',
       category: [
-        CaseStudyCategory.UX,
-        CaseStudyCategory.ProductDesign,
-        CaseStudyCategory.Research,
+        CaseStudyCategory.BrandingPackaging,
       ],
       image: {
-        relativePath: '../../assets/images/case-studies/product-ux/desktop/hero.svg',
-        altText: 'Example Image',
-        caption: 'This is an example image'
+        relativePath: '/product-ux/evpn-increase-user-renewal-rate/desktop/hero.png',
+        altText: '',
+        caption: ''
       },
       duration: '3 months',
-      role: 'Product Designer',
+      role: 'Principal Designer',
       activities: [
-        'Research',
-        'Wireframing',
-        'Prototyping'
+        'Owned the Rejoice account and worked directly with the Creative Director.',
+        'Packaging design for various product lineups (primary and bundle packaging) across multiple verticals (salon range to family range).',
+        'Collaborated with other Principals to design Rejoice brand vision based on market research (digital assets).',
+        'Organized vision workshops to shape the strategic direction of the packaging design.',
       ],
       impact: [
-        'Increased user engagement by 20%',
-        'Reduced bounce rate by 15%'
+        'The updated designs resulted in a 58% increase in shelf visibility and a 32% uplift in sales revenue across the GC and APAC markets.',
+        'The new brand vision led to a 21% increase in brand awareness and a 38% improvement in brand preference scores.',
+        'The workshops ensured that the packaging redesign was grounded in consumer insights and market trends, resulting in a 47% increase in consumer appeal and a 29% reduction in time-to-market.',
+        'The new packaging design was well-received by consumers, with a 4.5-star rating on e-commerce platforms and a 92% positive feedback rate in focus groups.'
       ]
     },
-    steps: [
-      {
-        insights: [
-          'Insight 1',
-          'Insight 2'
-        ],
-        process: [
-          {
-            text: 'Step 1',
-            subTasks: ['Sub-step 1', 'Sub-step 2']
-          },
-          {
-            text: 'Step 2',
-            images: [
-              {
-                relativePath: 'path/to/image.jpg',
-                altText: 'Example Image',
-                caption: 'This is an example image'
-              }
-            ]
-          }
-        ],
-        quote: 'Quote from this step'
-      },
-      // Add more steps if necessary
-    ],
-    learnings: [
-      {
-        text: 'Learning 1',
-        subTasks: ['Sub-learning 1', 'Sub-learning 2']
-      },
-      {
-        text: 'Learning 2'
-      }
-    ]
   }
 
 export default rejoiceBranding;

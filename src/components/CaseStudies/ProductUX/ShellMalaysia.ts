@@ -2,64 +2,61 @@ import { CaseStudyCategory, CaseStudyType } from '../CaseStudyType';
 
 const shellMalaysia: CaseStudyType = {
     onePager: {
-      title: 'Increase user renewal rate for ExpressVPN',
-      subtitle: 'Objective is to conduct an A/B experiment with new renewal messages. Reframed the initial problem to deliver a design recommendation that increased user renewal rate by 83%.',
+      title: 'Localisation for Shell Malaysia',
+      subtitle: 'After the conclusion of the Shell APAC project, Shell Malaysia came to us with a UI request. They wanted to introduce a new fuel subsidy program for users.',
       category: [
-        CaseStudyCategory.UX,
-        CaseStudyCategory.ProductDesign,
-        CaseStudyCategory.Research,
+        CaseStudyCategory.CampaignManagement,
+        CaseStudyCategory.BrandingPackaging,
+        CaseStudyCategory.GrowthDesign
       ],
       image: {
-        relativePath: '../../assets/images/case-studies/product-ux/desktop/hero.svg',
-        altText: 'Example Image',
-        caption: 'This is an example image'
+        relativePath: '/product-ux/evpn-increase-user-renewal-rate/desktop/hero.png',
+        altText: '',
+        caption: ''
       },
       duration: '3 months',
-      role: 'Product Designer',
+      role: 'Sole Designer',
       activities: [
-        'Research',
-        'Wireframing',
-        'Prototyping'
+        'Designed an intuitive redemption process without too much development effort.',
+        '',
+        '',
+        ''
       ],
       impact: [
-        'Increased user engagement by 20%',
-        'Reduced bounce rate by 15%'
+        '',
+        '',
+        '',
+        '',
+        '',      
       ]
     },
     steps: [
       {
         insights: [
-          'Insight 1',
-          'Insight 2'
+          'Minimal disruption to the current flow and screen designs because this was an additional feature to existing design.',
         ],
         process: [
           {
-            text: 'Step 1',
-            subTasks: ['Sub-step 1', 'Sub-step 2']
+            text: 'Showed key information to reduce cognitive load, while additional info were hidden in secondary layers.',
           },
-          {
-            text: 'Step 2',
-            images: [
-              {
-                relativePath: 'path/to/image.jpg',
-                altText: 'Example Image',
-                caption: 'This is an example image'
-              }
-            ]
-          }
         ],
-        quote: 'Quote from this step'
       },
-      // Add more steps if necessary
+      {
+        insights: [
+          'No visibility to Shell’s backend systems.',
+          'New updates on redemption process were given during every check-in, which demands swift pivoting of design direction.',
+        ],
+        process: [
+          {
+            text: 'When backend capability was undecided by client, or there were no contact time with developers, I provided multiple scenarios but recommended the option with the smoothest user journey.',
+          },
+        ],
+      },
     ],
     learnings: [
       {
-        text: 'Learning 1',
-        subTasks: ['Sub-learning 1', 'Sub-learning 2']
+        text:       'As no client side engineers were involved in our meetings, it proved to be difficult to understand backend capabilities. Moving forwards, we will involve engineers to milestone meetings to reduce design effort and second guessing.',
       },
-      {
-        text: 'Learning 2'
-      }
     ]
   }
 

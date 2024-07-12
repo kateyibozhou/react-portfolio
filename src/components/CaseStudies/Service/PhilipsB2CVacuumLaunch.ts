@@ -2,65 +2,32 @@ import { CaseStudyCategory, CaseStudyType } from '../CaseStudyType';
 
 const philipsB2CVacuum: CaseStudyType = {
     onePager: {
-      title: 'Increase user renewal rate for ExpressVPN',
-      subtitle: 'Objective is to conduct an A/B experiment with new renewal messages. Reframed the initial problem to deliver a design recommendation that increased user renewal rate by 83%.',
+      title: 'B2C launch design of Philips vacuum',
+      subtitle: 'Philips is launching a new league C vacuum cleaner for APAC. The HQ (Netherlands) has a ready set of campaign assets, but stakeholders felt APAC markets need understanding of local user profiles and customization of campaign with Singapore as launch market.',
       category: [
-        CaseStudyCategory.UX,
-        CaseStudyCategory.ProductDesign,
-        CaseStudyCategory.Research,
+        CaseStudyCategory.CampaignManagement,
+        CaseStudyCategory.CommunicationsDesign,
+        CaseStudyCategory.StrategyDesign
       ],
       image: {
-        relativePath: '../../assets/images/case-studies/product-ux/desktop/hero.svg',
-        altText: 'Example Image',
-        caption: 'This is an example image'
+        relativePath: '/product-ux/evpn-increase-user-renewal-rate/desktop/hero.png',
+        altText: '',
+        caption: ''
       },
       duration: '3 months',
-      role: 'Product Designer',
+      role: 'Project lead',
       activities: [
-        'Research',
-        'Wireframing',
-        'Prototyping'
+        'Led the design team and external agency for campaign design. Recruited users, led qualitative research, managed timeline of project, reported synthesis, designed campaign.',
+        'Conducted competitor analysis and remote diary studies on 16 users.',
+        'Identified communications touchpoints and customized messaging based on varying consumer profiles.',
+        'Localised existing global assets based on research.'
       ],
       impact: [
-        'Increased user engagement by 20%',
-        'Reduced bounce rate by 15%'
+        'Presented insights to Floor Care team and Personal Health stakeholders. Campaign launched in 2021.',
+        'The personalized approach resulted in a 40% increase in engagement rates across all touchpoints and a 30% improvement in conversion rates.',
+        'The localized campaign assets achieved a 45% higher click-through rate and a 35% increase in social media shares compared to the global assets.',
       ]
     },
-    steps: [
-      {
-        insights: [
-          'Insight 1',
-          'Insight 2'
-        ],
-        process: [
-          {
-            text: 'Step 1',
-            subTasks: ['Sub-step 1', 'Sub-step 2']
-          },
-          {
-            text: 'Step 2',
-            images: [
-              {
-                relativePath: 'path/to/image.jpg',
-                altText: 'Example Image',
-                caption: 'This is an example image'
-              }
-            ]
-          }
-        ],
-        quote: 'Quote from this step'
-      },
-      // Add more steps if necessary
-    ],
-    learnings: [
-      {
-        text: 'Learning 1',
-        subTasks: ['Sub-learning 1', 'Sub-learning 2']
-      },
-      {
-        text: 'Learning 2'
-      }
-    ]
   }
 
 export default philipsB2CVacuum;
