@@ -1,11 +1,13 @@
 .core-skills {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   gap: 48px;
   padding: 48px 100px;
   background-color: var(--primary-color-dark);
   color: var(--secondary_color);
   font-family: "Work Sans", sans-serif;
+  height: 100vh;
 }
 
 .core-skills .title {
@@ -25,6 +27,6 @@
 }
 
 .core-skills .other-skills {
-  font-size: 24px;
+  font-size: calc(15px + 0.78vw);
   font-weight: 700;
 }
