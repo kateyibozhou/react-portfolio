@@ -1,43 +1,52 @@
 .work-card {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  background-color: var(--primary-color-light);
-  padding: 24px;
-  border-radius: 16px;
-  color: #343A40;
-  font-family: "Work Sans", sans-serif;
-  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2);
-  position: relative;
-}
-
-.work-card:nth-child(odd) {
-  grid-row-end: span 2;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0.5rem 0.5rem 1.2rem rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  /* height: 32rem; */
 }
 
 .work-card:hover {
   cursor: pointer;
-  box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.4);
-  transition: box-shadow 0.3s;
+  box-shadow: 0.75rem 0.75rem 1.2rem rgba(0, 0, 0, 0.2);
 }
 
-.work-card .name {
-  font-size: 24px;
+.image-container {
+  height: 30rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content-container {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-bottom: 1rem;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-family: "Work Sans", sans-serif;
+}
+
+.name {
+  font-size: 1.5rem;
   font-weight: 700;
-  text-align: left;
+  margin-bottom: 0.5rem;
 }
 
-.work-card .description {
-  text-align: left;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight:400;
+.description {
+  margin-top: 0; /* Ensure no extra margin */
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
-.work-card .tags {
+.tags {
   display: flex;
   flex-wrap: wrap;
-  position: absolute;
-  bottom: 24px;
-  gap: 4px;
+  gap: 0.5rem;
+  margin-top: auto;
 }

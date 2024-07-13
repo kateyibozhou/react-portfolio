@@ -1,23 +1,30 @@
 .selected-work {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 48px 100px;
   background-color: var(--primary-color-dark);
-  gap: 48px;
+  align-items: flex-start;
+  padding-top: 5rem;
+  box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+  width: 100%;
+  gap: 3rem;
 }
 
 .selected-work .title {
   font-size: 96px;
   font-family: "Fraunces", serif;
   color: var(--secondary_color);
+  padding-left: 4rem;
 }
 
 .selected-work .work-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
-  width: 100%;
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 3rem;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  margin: 0 auto;
+  width: 100vw;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .selected-work .all-projects {
@@ -28,13 +35,14 @@
   border-radius: 30px;
   color: #fff;
   padding: 16px 36px;
+  margin: 4rem;
   font-size: 24px;
   text-align: center;
-  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0.5rem 0.5rem 1.2rem rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
 }
 
 .selected-work .all-projects:hover {
-  background-color: #fff;
-  color: var(--highlight-coral);
+  box-shadow: 0.75rem 0.75rem 1.2rem rgba(0, 0, 0, 0.2);
   cursor:pointer;
 }

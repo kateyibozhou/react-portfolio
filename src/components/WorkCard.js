@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Tag } from "antd";
+import { Tag } from "antd";
 import { useNavigate } from "react-router-dom";
 import { TagColors } from "../utils/SelectedWorkTags";
 
@@ -11,24 +11,26 @@ const WorkCard = ({ title, description, tags, path, image_path }) => {
     navigate(path);
   };
   return (
-    <div
-      className="work-card"
-      onClick={handleClick}
-      style={{
-        backgroundImage: `url(${image_path})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
-    >
-      <div className="name">{title}</div>
-      <div className="description">{description}</div>
-      <div className="tags">
-        {tags?.map((t) => (
-          <Tag key={t} style={{ color: "black" }} bordered={false} color={TagColors[t]}>
-            {t}
-          </Tag>
-        ))}
+    <div className="work-card" onClick={handleClick}>
+      <div 
+        className="image-container"
+        style={{
+          backgroundImage: `url(${image_path})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      />
+      <div className="content-container">
+        <h2 className="name">{title}</h2>
+        <p className="description">{description}</p>
+        <div className="tags">
+          {tags?.map((t) => (
+            <Tag key={t} style={{ color: "black" }} bordered={false} color={TagColors[t]}>
+              {t}
+            </Tag>
+          ))}
+        </div>
       </div>
     </div>
   );
