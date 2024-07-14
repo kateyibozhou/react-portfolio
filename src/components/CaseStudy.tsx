@@ -19,6 +19,7 @@ const FullViewPortContainer = styled.section`
 
 const CaseStudyContainer = styled.div`
   text-align: left;
+  color: ${({ theme }) => theme.colors.primaryLight};
   margin: calc(0.5rem + 2vw);
   padding: calc(0.5rem + 2vw);
   border-radius: 8px;
@@ -70,11 +71,13 @@ const NumberedList = styled.ul`
 `;
 
 const Details = styled.div`
-  flex-grow: 4;
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
-  width: 100%;
+  gap: 32px;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 
   > div {
     flex: 1;
@@ -96,6 +99,17 @@ const Details = styled.div`
   ul {
     list-style-type: disc;
     padding-left: 20px;
+  }
+
+  .role {
+    flex-grow: 1;
+  }
+
+  .activities {
+    flex-grow: 2;
+  }
+  .impact {
+    flex-grow: 2;
   }
 `;
 
@@ -165,7 +179,7 @@ const CaseStudy: React.FC = () => {
   useEffect(() => {
     setCaseStudy(caseStudies[id] || null);
   }, [id]);
-
+  console.log(caseStudy);
   if (!caseStudy) {
     return (
       <CaseStudyContainer>
@@ -254,20 +268,21 @@ const CaseStudy: React.FC = () => {
       </OnePagerSummary>
       <CaseStudyContainer>
         <Steps>
-          {caseStudy.steps && caseStudy.steps.map((step, index) => (
-            <Step key={index}>
-              <h4>Step {index + 1}</h4>
-              <h5>Insights</h5>
-              <ul>
-                {step.insights.map((insight, idx) => (
-                  <li key={idx}>{insight}</li>
-                ))}
-              </ul>
-              <h5>Process</h5>
-              <ul>{renderProcess(step.process)}</ul>
-              {step.quote && <blockquote>{step.quote}</blockquote>}
-            </Step>
-          ))}
+          {caseStudy.steps &&
+            caseStudy.steps.map((step, index) => (
+              <Step key={index}>
+                <h4>Step {index + 1}</h4>
+                <h5>Insights</h5>
+                <ul>
+                  {step.insights.map((insight, idx) => (
+                    <li key={idx}>{insight}</li>
+                  ))}
+                </ul>
+                <h5>Process</h5>
+                <ul>{renderProcess(step.process)}</ul>
+                {step.quote && <blockquote>{step.quote}</blockquote>}
+              </Step>
+            ))}
         </Steps>
         {caseStudy.learnings && (
           <Learnings>
