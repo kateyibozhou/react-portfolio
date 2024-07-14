@@ -10,10 +10,10 @@
 }
 
 .selected-work .title {
-  font-size: 96px;
+  font-size: 4rem;
   font-family: "Fraunces", serif;
   color: var(--secondary_color);
-  padding-left: 4rem;
+  padding-left: 2rem;
 }
 
 .selected-work .work-cards {
@@ -23,8 +23,8 @@
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
   margin: 0 auto;
   width: 100vw;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .selected-work .all-projects {
