@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/yibo-portfolio-react/static/css/main.b2e4e41b.css",
+    "main.js": "/yibo-portfolio-react/static/js/main.a7a3c02e.js",
+    "static/js/453.1cc91022.chunk.js": "/yibo-portfolio-react/static/js/453.1cc91022.chunk.js",
+    "static/media/4_prototype.mov": "/yibo-portfolio-react/static/media/4_prototype.191d5fba38b59d22f37a.mov",
+    "static/media/hero.svg": "/yibo-portfolio-react/static/media/hero.8c3f61aea8d11f123b08.svg",
+    "static/media/hero.png": "/yibo-portfolio-react/static/media/hero.a14a0838268a5266c495.png",
+    "static/media/growth.svg": "/yibo-portfolio-react/static/media/growth.e6f6bb749d16ca7e586f3715656f9c65.svg",
+    "static/media/UX.svg": "/yibo-portfolio-react/static/media/UX.47fdd6524fbfbf2cb26ce50a6f7fe726.svg",
+    "static/media/SD.svg": "/yibo-portfolio-react/static/media/SD.35e95ce81029b30f5b6ce8e23a470829.svg",
+    "index.html": "/yibo-portfolio-react/index.html",
+    "main.b2e4e41b.css.map": "/yibo-portfolio-react/static/css/main.b2e4e41b.css.map",
+    "main.a7a3c02e.js.map": "/yibo-portfolio-react/static/js/main.a7a3c02e.js.map",
+    "453.1cc91022.chunk.js.map": "/yibo-portfolio-react/static/js/453.1cc91022.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b2e4e41b.css",
+    "static/js/main.a7a3c02e.js"
+  ]
+}
