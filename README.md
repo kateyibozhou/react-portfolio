@@ -11,3 +11,13 @@ If you're interested in setting up your own digital garden, here are a few resou
 3. Run `npm install` to install the dependencies
 4. `npm start` to start the development server
 5. Open `http://localhost:3000` in your browser
+
+## Building and deploying to gh-pages
+
+Make sure you have the `gh-pages` package installed *only for deployment*:
+
+```bash
+npm install gh-pages --save-dev
+```
+
+Build with `npm run build` and deploy with `npm run deploy`.
