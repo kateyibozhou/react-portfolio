@@ -75,7 +75,7 @@ const Details = styled.div`
   justify-content: space-around;
   margin-top: 20px;
   gap: 32px;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 50em) {
     flex-direction: column;
   }
 
