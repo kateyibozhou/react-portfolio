@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-around;
   gap: 2rem;
+  padding-top: 5rem;
   background-color: var(--primary-color-dark);
   color: var(--secondary_color);
   font-family: "Work Sans", sans-serif;
