@@ -1,5 +1,6 @@
 .landingPage {
   height: 100vh;
+  max-width: 100vw;
   display: flex;
   flex-direction: column;
 }
@@ -18,35 +19,34 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 72px 100px;
   text-align: center;
   background-color: var(--primary-color-dark);
 }
 
 .hero .title {
-  font-size: 200px;
+  font-size: 4rem;
   font-weight: 700;
-  padding: 24px;
+  padding: 1rem;
   color: var(--primary-color-light);
   font-family: "Fraunces", serif;
 }
 
 .hero .subtitle {
-  font-size: 24px;
-  padding: 24px;
+  font-size: 1.2rem;
   font-weight: 700;
+  padding: 1.5rem;
   color: var(--primary-color-light);
   font-family: "Work Sans", sans-serif;
   
 }
 .hero .see-more {
-  padding: 24px 0px;
+  padding: 1.5rem 0px;
   display: flex;
   flex: stretch;
   justify-content: flex-end;
   position:absolute;
-  bottom: 24px;
-  right: 100px;
+  bottom: 1rem;
+  right: 3rem;
   width: 100%;
 
 }
@@ -54,15 +54,21 @@
   all: unset;
   color: var(--primary-color-light);
   font-family: "Work Sans", sans-serif;
-  font-size: 24px;
+  font-size: 1rem;
   font-weight: 300;
   cursor: pointer;
   display: flex;
-  gap: 8px;
+  gap: 0.2rem;
   animation-name: bounce;
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero .see-more button {
+    animation: none;
+  }
 }
 .hero .see-more button:hover {
   text-decoration: underline;

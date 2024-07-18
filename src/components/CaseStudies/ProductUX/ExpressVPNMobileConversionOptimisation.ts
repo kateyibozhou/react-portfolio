@@ -11,7 +11,7 @@ const evpnMobileConversion: CaseStudyType = {
       ],
       image: {
         
-        relativePath: "/product-ux/evpn-increase-user-renewal-rate/desktop/hero.png",
+        relativePath: "/product-ux/optimize-evpn-mobile-checkout/hero.png",
         altText: 'Example Image',
         caption: 'This is an example image'
       },
@@ -46,6 +46,18 @@ const evpnMobileConversion: CaseStudyType = {
           },
           {
             text: 'Reduced the amount of signals on the Order page by streamlining the amount of colours used and simplifying the shapes.',
+            images: [
+              {
+                relativePath: "/product-ux/optimize-evpn-mobile-checkout/design-showcase.png",
+                altText: 'Design showcase for mobile',
+                caption: 'Mobile checkout page design showcase'
+              },
+              {
+                relativePath: "/product-ux/optimize-evpn-mobile-checkout/design-explorations.png",
+                altText: 'Various design explorations',
+                caption: 'Various design explorations'
+              },
+            ],
           },
         ],
       },
@@ -56,6 +68,14 @@ const evpnMobileConversion: CaseStudyType = {
         process: [
           {
             text: 'Persuaded stakeholders to move away from copying competitor design as it does not follow UX best practice and creates additional user friction when viewing plan info.',
+            images: [
+              {
+                relativePath: "/product-ux/optimize-evpn-mobile-checkout/competitor-design.png",
+                afterPath: "/product-ux/optimize-evpn-mobile-checkout/inspired-by-competition.png",
+                altText: 'Competitor design-like ExpressVPN design',
+                caption: 'ExpressVPN design inspired by competition. Persuaded stakeholders to abandon this design idea as action sheet interaction hinders users from comparing plans easily.'
+              },
+            ],
           },
         ],
         quote: 'I believe that every failed design experiment is an opportunity to learn more about our users, collect more data points to design better, higher impact experiments in the future.'
@@ -76,9 +96,22 @@ const evpnMobileConversion: CaseStudyType = {
           },
           {
             text: 'Surfacing the 30 day money back guarantee higher up the page to ensure trust and transparency, besides having it only inside plan cards.',
+            images: [
+              {
+                relativePath: "/product-ux/optimize-evpn-mobile-checkout/order-regular-before.png",
+                afterPath: "/product-ux/optimize-evpn-mobile-checkout/order-regular-after.png",
+                altText: 'Order page design for Regular scenario',
+                caption: 'Order page design for Regular scenario before (left) and after (right): Negotiated the hierarchy between “Most popular” and discount saved. Based on historical data, “Most popular” message performed better, hence it has a more prominent visual hierarchy than the discount pill.'
+              },
+              {
+                relativePath: "/product-ux/optimize-evpn-mobile-checkout/order-12-3-before.png",
+                afterPath: "/product-ux/optimize-evpn-mobile-checkout/order-12-3-after.png",
+                altText: 'Order Page: 12+3 scenario (Order page for users from affiliate traffic)',
+                caption: '12+3 scenario : “Most popular” for Affiliate users are ranked lower in attractiveness compared to the discount coupon, hence it is hidden inside plan card instead.'
+              },
+            ],
           }
         ],
-        quote: 'The next iteration resulted in a 2.5% AOV uplift and projected revenue uplift of $573k+ because design is more optimised for 12+3 scenario users.',
       },
     ],
     learnings: [
@@ -90,6 +123,22 @@ const evpnMobileConversion: CaseStudyType = {
       },
       {
         text: 'This experiment paved the way for further iterations of other Order page designs.',
+        images: [
+          {
+            relativePath: "/product-ux/optimize-evpn-mobile-checkout/final-before.png",
+            afterPath: "/product-ux/optimize-evpn-mobile-checkout/final-after.png",
+            altText: 'Example Image',
+            caption: 'Past 12+3 scenario (left) did not perform up to expectations. The new one (right) resulted in 2.5% AOV uplift, projected revenue uplift of $573k+. We found out that users who land on this Order page interact with the accordion feature but did not convert. We hypothesise that users want more information and proceeded to iterate this design.'
+          },
+        ],
+      },
+      {
+        text: 'For the next iteration, we killed the accordion feature and iterated with calling out other features:',
+        subTasks: [
+          'Dollar saved & percentage discount flag appeals to users who shop with different types of mental models',
+          'Simplify information discoverability',
+          'Discount comparison between plan types nudges user towards the 12 month plan',
+        ],
       },
     ]
   }

@@ -4,20 +4,22 @@
   line-height: 1.4;
   background-color: var(--primary-color-dark);
   color: var(--secondary_color);
-  height: 90vh;
-  width: 60rem;
+  min-height: 80vh;
+  max-width: 60rem;
   margin: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  justify-content: center;
 }
 
 .about .title {
-  font-size: 96px;
+  font-size: 4rem;
   font-family: "Fraunces", serif;
 }
 
 .about .description {
-  font-size: calc(30px + 1.4vw);
+  font-size: 2.5rem;
   font-family: "Fraunces", serif;
   text-align: left;
   font-weight: 400;
-  margin: auto;
 }

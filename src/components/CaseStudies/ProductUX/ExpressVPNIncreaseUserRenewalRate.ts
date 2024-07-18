@@ -53,6 +53,38 @@ const evpnIncreaseUserRenewalRate: CaseStudyType = {
               'Although majority of users land on Dashboard through Organic sources, I believe that majority of users are influenced by email campaigns but do not click through the email CTA into Dashboard.',
               'Users check their emails during their daily commute but will do in-depth research and purchase on their desktop/laptop, hence this behaviour may be detected as organic traffic.'
             ],
+            images: [
+              {
+              relativePath: "/product-ux/evpn-increase-user-renewal-rate/1-1-edit-sub-page.png",
+              altText: 'Edit subscription page',
+              caption: 'Edit subscription page'
+            },
+            {
+              relativePath: "/product-ux/evpn-increase-user-renewal-rate/1-2-dash.png",
+              altText: 'Dashboard, 35k users',
+              caption: 'Dashboard, 35k users'
+            },
+            {
+              relativePath: "/product-ux/evpn-increase-user-renewal-rate/my-sub.png",
+              altText: 'My Subscription, 11.7k users',
+              caption: 'My Subscription, 11.7k users'
+            },
+            {
+              relativePath: "/product-ux/evpn-increase-user-renewal-rate/edit-sub-settings.png",
+              altText: 'Edit Subscription settings, 5k users',
+              caption: 'Edit Subscription settings, 5k users'
+            },
+            {
+            relativePath: "/product-ux/evpn-increase-user-renewal-rate/email-t-1.png",
+            altText: 'Email to users: T-1 day from expiry of subscription. "Renew Now" link brings user to dashboard that has renewal reminder',
+            caption: 'Email to users: T-1 day from expiry of subscription. "Renew Now" link brings user to dashboard that has renewal reminder'
+            },
+            {
+            relativePath: "/product-ux/evpn-increase-user-renewal-rate/t-45.png",
+            altText: 'Dashboard: renewal reminder for T-45 days',
+            caption: 'Dashboard: renewal reminder for T-45 days'
+            },
+          ],
           },
         ],
         quote: 'These data points helped me convince stakeholders to hold the A/B experiment on the Dashboard and My Subscription pages instead of Edit Subscription page.'
@@ -68,6 +100,13 @@ const evpnIncreaseUserRenewalRate: CaseStudyType = {
           },
           {
             text: 'But this takes too much Dev effort for this experiment and idea was killed.',
+            images: [
+              {
+              relativePath: "/product-ux/evpn-increase-user-renewal-rate/init.png",
+              altText: 'Initial design proposed solves a user pain point, but was shelved due to development effort.',
+              caption: 'Initial design proposed solves a user pain point, but was shelved due to development effort.'
+            },
+          ],
           },
           {
             text: 'I pivoted and proposed a new design:',
@@ -84,12 +123,23 @@ const evpnIncreaseUserRenewalRate: CaseStudyType = {
               'T-72 hours',
               'Expired users, but within grace period',
               'Expired users',
-            ]
+            ],
+            images: [
+              {
+              relativePath: "/product-ux/evpn-increase-user-renewal-rate/final-mobile.png",
+              altText: 'A snapshot of the final design on mobile',
+              caption: 'A snapshot of the final design on mobile'
+            },
+              {
+              relativePath: "/product-ux/evpn-increase-user-renewal-rate/final-desk.png",
+              altText: 'A snapshot of the final design on desktop',
+              caption: 'A snapshot of the final design on desktop'
+            },
+          ],
           },
         ],
         quote: 'I fundamentally believe that good design should deliver business value. Hence, this design increased renewal revenue by 83% ,+127k vs 69k on control design.'
       }
-      // Add more steps if necessary
     ],
     learnings: [
       {
@@ -101,7 +151,14 @@ const evpnIncreaseUserRenewalRate: CaseStudyType = {
           'Don\'t take each project brief at face value, instead, question the brief and back my assumptions with concrete data points.',
           'Have a deep understanding of how users behave in their user journey through constant conversations with various stakeholders outside your teams. I regularly set up 1:1 with adjacent teams to understand how their part of the business works in order to builder a wider ecosystems view.',
           'Having an ecosystems view combined with knowing what metrics to shift, will result in asking the right questions. Asking the right questions will ensure my design delivers the maximum business impact.',
-        ]
+        ],
+        images: [
+          {
+          relativePath: "/product-ux/evpn-increase-user-renewal-rate/map.png",
+          altText: 'Customer journey map',
+          caption: 'Customer journey map'
+          }
+        ],
       },
       {
         text: 'What helped me immensely in this project is having a web customer journey map, which houses all the screens, including email and app entry points into the website, as well as user behaviour across the sales funnel.'

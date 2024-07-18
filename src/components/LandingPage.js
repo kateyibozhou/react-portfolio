@@ -2,7 +2,6 @@ import React from "react";
 import "./LandingPage.css";
 import "../utils/TextFocusIn.css";
 import { ArrowDownOutlined } from "@ant-design/icons";
-import Snowfall from "react-snowfall";
 import ParticleAnimation from "./ParticleAnimation";  // Import the ParticleAnimation component
 
 const LandingPage = () => {

@@ -41,6 +41,23 @@ const evpnEvangeliseCustomerJourneyMaps: CaseStudyType = {
           },
           {
             text: 'Inconsistent user experiences discovered through mapping the CJM are flagged to stakeholders and put in design backlog.',
+            images: [
+              {
+                relativePath: "/product-ux/evpn-increase-user-renewal-rate/desktop/hero.png",
+                altText: 'Example Image',
+                caption: 'This is an example image'
+              },
+              {
+                relativePath: "/product-ux/evpn-increase-user-renewal-rate/desktop/hero.png",
+                altText: 'Example Image',
+                caption: 'This is an example image'
+              },
+              {
+                relativePath: "/product-ux/evpn-increase-user-renewal-rate/desktop/hero.png",
+                altText: 'Example Image',
+                caption: 'This is an example image'
+              },
+            ],
           },
           {
             text: 'While it is not possible to embed quantitative data into the CJM as it is constantly fluctuating on Google Analytics, the approach is to take a slice of it during a certain time frame to give a general view of how a particular page performed in a particular week (Eg. first week of Aug).',
@@ -50,6 +67,18 @@ const evpnEvangeliseCustomerJourneyMaps: CaseStudyType = {
           },
           {
             text: 'Promoted the CJM to Growth Marketers, UX Researchers, Content Strategists as a document to cross check the latest screens, ensure copy consistency, ensure the correct screens are targeted for A/B testing.',
+            images: [
+              {
+                relativePath: "/product-ux/evpn-increase-user-renewal-rate/desktop/hero.png",
+                altText: 'Example Image',
+                caption: 'This is an example image'
+              },
+              {
+                relativePath: "/product-ux/evpn-increase-user-renewal-rate/desktop/hero.png",
+                altText: 'Example Image',
+                caption: 'This is an example image'
+              },
+            ],
           },
         ],
         quote: 'The CJM is now embedded into the design process and the document serves multiple business functions - Design, Research, Growth Marketing.'

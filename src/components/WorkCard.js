@@ -26,7 +26,7 @@ const WorkCard = ({ title, description, tags, path, image_path }) => {
         <p className="description">{description}</p>
         <div className="tags">
           {tags?.map((t) => (
-            <Tag key={t} style={{ color: "black" }} bordered={false} color={TagColors[t]}>
+            <Tag key={t} style={{ color: "black", borderRadius: "8px", padding: "8px" }} bordered={false} color={TagColors[t]}>
               {t}
             </Tag>
           ))}

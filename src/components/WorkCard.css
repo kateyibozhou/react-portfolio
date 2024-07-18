@@ -1,17 +1,16 @@
 .work-card {
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: var(--primary-color-light);
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0.5rem 0.5rem 1.2rem rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
-  /* height: 32rem; */
+  transition: transform 0.3s ease;
 }
 
 .work-card:hover {
   cursor: pointer;
-  box-shadow: 0.75rem 0.75rem 1.2rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.5rem);
 }
 
 .image-container {

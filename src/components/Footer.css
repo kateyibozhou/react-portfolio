@@ -1,11 +1,11 @@
 .footer {
   padding: 50px 20px;
-  background-color: #4c3a2b;
   text-align: center;
 }
 
 .footer h2 {
-  font-size: 36px;
+  font-size: 2rem;
+  color: var(--secondary_color);
   margin-bottom: 20px;
 }
 
@@ -20,9 +20,8 @@
   text-decoration: none;
   font-weight: bold;
   padding: 10px;
-  transition: color 0.3s;
 }
 
 .footer .contacts a:hover {
-  color: #c3a56d;
+  text-decoration: underline;
 }
