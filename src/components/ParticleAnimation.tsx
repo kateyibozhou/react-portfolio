@@ -94,8 +94,12 @@ const ParticleAnimation = () => {
         },
       });
 
-      space.bindMouse().bindTouch();
-      space.play();
+      // let the space follow mouse pointer but don't display on touch devices
+      if (window.matchMedia("(hover: hover)").matches) {
+        space.bindMouse().play();
+      } else {
+        space.play();
+      }
 
       return () => {
         space.stop();
