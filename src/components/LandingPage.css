@@ -1,5 +1,6 @@
 .landingPage {
   height: 100vh;
+  max-width: 100vw;
   display: flex;
   flex-direction: column;
 }
@@ -23,15 +24,15 @@
 }
 
 .hero .title {
-  font-size: 9rem;
+  font-size: 4rem;
   font-weight: 700;
-  padding: 1.5rem;
+  padding: 1rem;
   color: var(--primary-color-light);
   font-family: "Fraunces", serif;
 }
 
 .hero .subtitle {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   padding: 1.5rem;
   color: var(--primary-color-light);
@@ -44,8 +45,8 @@
   flex: stretch;
   justify-content: flex-end;
   position:absolute;
-  bottom: 24px;
-  right: 100px;
+  bottom: 1rem;
+  right: 3rem;
   width: 100%;
 
 }
@@ -53,11 +54,11 @@
   all: unset;
   color: var(--primary-color-light);
   font-family: "Work Sans", sans-serif;
-  font-size: 24px;
+  font-size: 1rem;
   font-weight: 300;
   cursor: pointer;
   display: flex;
-  gap: 8px;
+  gap: 0.2rem;
   animation-name: bounce;
   animation-duration: 1s;
   animation-iteration-count: infinite;
