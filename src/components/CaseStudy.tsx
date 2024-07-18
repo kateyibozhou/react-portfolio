@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import caseStudies from "./CaseStudies/CaseStudiesData";
+import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 import { CaseStudyType, CaseStudyWork } from "./CaseStudies/CaseStudyType";
 interface RouteParams {
   id: string;
@@ -15,6 +16,8 @@ const FullViewPortContainer = styled.section`
   align-content: stretch;
   justify-content: space-between;
   align-items: stretch;
+  background-color: ${({ theme }) => theme.colors.primaryLight};
+  color: ${({ theme }) => theme.colors.primaryDark};
 `;
 
 const CaseStudyContainer = styled.div`
@@ -149,7 +152,7 @@ const Image = styled.img`
 
 const Caption = styled.p`
   font-size: 0.85em;
-  color: ${({ theme }) => theme.colors.darkGray};
+  color: ${({ theme }) => theme.colors.workCardDarkText};
   margin-top: 5px;
 `;
 
@@ -177,21 +180,29 @@ const CaseStudy: React.FC = () => {
   const renderProcess = (process: CaseStudyWork[]) => {
     return process.map((processItem, idx) => (
       <li key={idx}>
-        <p>{processItem.text}</p>
-        {processItem.subTasks && (
-          <NumberedList>
-            {processItem.subTasks.map((subTask, subIdx) => (
-              <li key={subIdx}>{subTask}</li>
-            ))}
-          </NumberedList>
-        )}
-        {processItem.images &&
-          processItem.images.map((image, imgIdx) => (
-            <ImageContainer key={imgIdx}>
-              <Image src={image.relativePath} alt={image.altText} />
-              <Caption>{image.caption}</Caption>
-            </ImageContainer>
-          ))}
+      <p>{processItem.text}</p>
+      {processItem.subTasks && (
+        <NumberedList>
+        {processItem.subTasks.map((subTask, subIdx) => (
+          <li key={subIdx}>{subTask}</li>
+        ))}
+        </NumberedList>
+      )}
+      {processItem.images &&
+        processItem.images.map((image, imgIdx) => (
+        <ImageContainer key={imgIdx}>
+          {image.afterPath ? (
+          <ReactCompareSlider
+            itemOne={<ReactCompareSliderImage src={require(`../assets/images/case-studies${image.relativePath}`)} alt={image.altText} />}
+            itemTwo={<ReactCompareSliderImage src={require(`../assets/images/case-studies${image.afterPath}`)} alt={image.altText} />}
+            changePositionOnHover={true}
+          />
+          ) : (
+          <Image src={require(`../assets/images/case-studies${image.relativePath}`)} alt={image.altText} />
+          )}
+          <Caption>{image.caption}</Caption>
+        </ImageContainer>
+        ))}
       </li>
     ));
   };
@@ -210,7 +221,15 @@ const CaseStudy: React.FC = () => {
         {learning.images &&
           learning.images.map((image, imgIdx) => (
             <ImageContainer key={imgIdx}>
-              <Image src={image.relativePath} alt={image.altText} />
+              {image.afterPath ? (
+                <ReactCompareSlider
+                  itemOne={<ReactCompareSliderImage src={require(`../assets/images/case-studies${image.relativePath}`)} alt={image.altText} />}
+                  itemTwo={<ReactCompareSliderImage src={require(`../assets/images/case-studies${image.afterPath}`)} alt={image.altText} />}
+                  changePositionOnHover={true}
+                />
+              ) : (
+                <Image src={require(`../assets/images/case-studies${image.relativePath}`)} alt={image.altText} />
+              )}
               <Caption>{image.caption}</Caption>
             </ImageContainer>
           ))}
@@ -277,12 +296,12 @@ const CaseStudy: React.FC = () => {
         )}
       </CaseStudyContainer>
       {/* example of inserting video */}
-      <video controls autoPlay loop muted>
+      {/* <video controls autoPlay loop muted>
         <source
-          src={require("../assets/images/case-studies/product-ux/evpn-increase-user-renewal-rate/desktop/4_prototype.mov")}
+          src={require("../assets/images/case-studies${caseStudy.onePager.video.relativePath}")}
           type="video/mp4"
         />
-      </video>
+      </video> */}
     </FullViewPortContainer>
   );
 };
