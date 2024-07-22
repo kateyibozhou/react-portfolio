@@ -23,3 +23,20 @@
   text-align: left;
   font-weight: 400;
 }
+
+@media screen and (max-width: 50rem) {
+
+  .about {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .about .title {
+    font-size: 4rem;
+  }
+
+  .about .description {
+    font-size: 1.8rem;
+  }
+  
+}

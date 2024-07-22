@@ -46,3 +46,17 @@
   box-shadow: 0.75rem 0.75rem 1.2rem rgba(0, 0, 0, 0.2);
   cursor:pointer;
 }
+
+@media screen and (max-width: 50rem) {
+  .selected-work .title {
+    font-size: 3rem;
+    padding-left: 1rem;
+  }
+
+  .selected-work .work-cards {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+}
