@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import { TagColors } from "../utils/SelectedWorkTags";
 import styled from "styled-components";
 
-import "./WorkCard.css";
 const WorkCardContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -24,10 +23,7 @@ const ImageContainer = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  backgroundrepeat: "no-repeat";
-  backgroundsize: "cover";
-  backgroundposition: "center";
-  background: ${(props) => `url(${props.image_path})`};
+  background-image: url(${(props) => props.image_path});
 `;
 
 const ContentContainer = styled.div`
@@ -39,6 +35,25 @@ const ContentContainer = styled.div`
   flex-direction: column;
   text-align: left;
   font-family: "Work Sans", sans-serif;
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    margin-top: 0; /* Ensure no extra margin */
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto;
+  }
 `;
 const WorkCard = ({ title, description, tags, path, image_path }) => {
   const navigate = useNavigate();
@@ -47,12 +62,10 @@ const WorkCard = ({ title, description, tags, path, image_path }) => {
   };
   return (
     <WorkCardContainer onClick={handleClick}>
-      <ImageContainer
-        image_path={image_path}
-      />
-      <div className="content-container">
-        <h2 className="name">{title}</h2>
-        <p className="description">{description}</p>
+      <ImageContainer image_path={image_path} />
+      <ContentContainer>
+        <h2>{title}</h2>
+        <p>{description}</p>
         <div className="tags">
           {tags?.map((t) => (
             <Tag
@@ -65,7 +78,7 @@ const WorkCard = ({ title, description, tags, path, image_path }) => {
             </Tag>
           ))}
         </div>
-      </div>
+      </ContentContainer>
     </WorkCardContainer>
   );
 };
