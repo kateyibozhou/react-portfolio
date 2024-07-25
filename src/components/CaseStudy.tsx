@@ -15,18 +15,19 @@ const FullViewPortContainer = styled.section`
   flex-direction: column;
   align-content: stretch;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
   background-color: ${({ theme }) => theme.colors.primaryLight};
   color: ${({ theme }) => theme.colors.primaryDark};
+  margin: 0 auto;
 `;
 
 const CaseStudyContainer = styled.div`
   text-align: left;
-  color: ${({ theme }) => theme.colors.primaryLight};
+  color: ${({ theme }) => theme.colors.primaryDark};
   margin: calc(0.5rem + 2vw);
   padding: calc(0.5rem + 2vw);
   border-radius: 8px;
-  max-width: 100%; // TODO: Change this later after adding images
+  max-width: 50rem;
 `;
 
 const OnePagerSummary = styled.div`
@@ -117,8 +118,9 @@ const Details = styled.div`
 `;
 
 const Steps = styled.div`
-  max-width: 50%; // TODO: Change this later after adding images
+  max-width: 50rem;
   margin-top: 40px;
+
 `;
 
 const Step = styled.div`
@@ -150,29 +152,36 @@ const Step = styled.div`
     font-size: 1.5em;
     font-weight: 600;
     color: ${({ theme }) => theme.colors.primaryDark};
-    width: 80vw;
   }
 `;
 
 const ImageContainer = styled.div`
-  margin: 20px 0;
+  margin: 1.25rem auto;
 `;
 
 const Image = styled.img`
   max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+  max-height: 60vh;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  display: block;
 `;
 
 const Caption = styled.p`
-  font-size: 0.85em;
+  margin: 0 auto;
+  display: block;
+  font-size: 0.9rem;
   color: ${({ theme }) => theme.colors.workCardDarkText};
-  margin-top: 5px;
+  margin-top: 0.3rem;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-style: italic;
 `;
 
 const Learnings = styled.div`
   margin-top: 40px;
-  max-width: 50%; // TODO: Change this later after adding images
+  max-width: 50rem;
 `;
 
 const CaseStudy: React.FC = () => {
@@ -305,7 +314,7 @@ const CaseStudy: React.FC = () => {
         </Steps>
         {caseStudy.learnings && (
           <Learnings>
-            <h4>Learnings</h4>
+            <h5>Learnings</h5>
             <ul>{renderLearnings(caseStudy.learnings)}</ul>
           </Learnings>
         )}
