@@ -37,6 +37,13 @@ const evpnIncreaseUserRenewalRate: CaseStudyType = {
         process: [
           {
             text: 'Triangulating multiple data points (from Google Analytics, Customer Journey Map screen flows and VOTC research), I convinced them to conduct the experimentation on Dashboard because of higher volumes of traffic.',
+            images: [
+              {
+                relativePath: "/product-ux/evpn-increase-user-renewal-rate/1-screen-flow.png",
+                altText: 'Initial A/B experimentation was proposed on the Edit Subscription page. I mapped out the screen flow and traffic pulled from Google Analytics to determine which page is the most optimal for experimentation.',
+                caption: 'Initial A/B experimentation was proposed on the Edit Subscription page. I mapped out the screen flow and traffic pulled from Google Analytics to determine which page is the most optimal for experimentation.'
+              },
+            ],
           },
           {
             text: 'Looked at screen flows to determine location in the sale funnel.',
@@ -49,41 +56,36 @@ const evpnIncreaseUserRenewalRate: CaseStudyType = {
           },
           {
             text: 'One of the tasks was to map out renewal email to website entry points to understand user flow:',
-            subTasks: [
-              'Although majority of users land on Dashboard through Organic sources, I believe that majority of users are influenced by email campaigns but do not click through the email CTA into Dashboard.',
-              'Users check their emails during their daily commute but will do in-depth research and purchase on their desktop/laptop, hence this behaviour may be detected as organic traffic.'
-            ],
+            // subTasks: [
+            //   'Although majority of users land on Dashboard through Organic sources, I believe that majority of users are influenced by email campaigns but do not click through the email CTA into Dashboard.',
+            //   'Users check their emails during their daily commute but will do in-depth research and purchase on their desktop/laptop, hence this behaviour may be detected as organic traffic.'
+            // ],
             images: [
-              {
-              relativePath: "/product-ux/evpn-increase-user-renewal-rate/1-1-edit-sub-page.png",
-              altText: 'Edit subscription page',
-              caption: 'Edit subscription page'
-            },
             {
-              relativePath: "/product-ux/evpn-increase-user-renewal-rate/1-2-dash.png",
-              altText: 'Dashboard, 35k users',
-              caption: 'Dashboard, 35k users'
+            relativePath: "/product-ux/evpn-increase-user-renewal-rate/2-map-renewal-email.png",
+            altText: 'Mapping out renewal email to website entry points to understand user flow. Although majority of users land on Dashboard through Organic sources, I believe that majority of users are influenced by email campaigns but do not click through the email CTA into Dashboard. Users check their emails during their daily commute but will do indepth research and purchase on their desktop/laptop, hence this behaviour may be detected as organic traffic.',
+            caption: 'Mapping out renewal email to website entry points to understand user flow. Although majority of users land on Dashboard through Organic sources, I believe that majority of users are influenced by email campaigns but do not click through the email CTA into Dashboard. Users check their emails during their daily commute but will do indepth research and purchase on their desktop/laptop, hence this behaviour may be detected as organic traffic.'
             },
-            {
-              relativePath: "/product-ux/evpn-increase-user-renewal-rate/my-sub.png",
-              altText: 'My Subscription, 11.7k users',
-              caption: 'My Subscription, 11.7k users'
-            },
-            {
-              relativePath: "/product-ux/evpn-increase-user-renewal-rate/edit-sub-settings.png",
-              altText: 'Edit Subscription settings, 5k users',
-              caption: 'Edit Subscription settings, 5k users'
-            },
-            {
-            relativePath: "/product-ux/evpn-increase-user-renewal-rate/email-t-1.png",
-            altText: 'Email to users: T-1 day from expiry of subscription. "Renew Now" link brings user to dashboard that has renewal reminder',
-            caption: 'Email to users: T-1 day from expiry of subscription. "Renew Now" link brings user to dashboard that has renewal reminder'
-            },
-            {
-            relativePath: "/product-ux/evpn-increase-user-renewal-rate/t-45.png",
-            altText: 'Dashboard: renewal reminder for T-45 days',
-            caption: 'Dashboard: renewal reminder for T-45 days'
-            },
+            // {
+            //   relativePath: "/product-ux/evpn-increase-user-renewal-rate/1-2-dash.png",
+            //   altText: 'Dashboard, 35k users',
+            //   caption: 'Dashboard, 35k users'
+            // },
+            // {
+            //   relativePath: "/product-ux/evpn-increase-user-renewal-rate/my-sub.png",
+            //   altText: 'My Subscription, 11.7k users',
+            //   caption: 'My Subscription, 11.7k users'
+            // },
+            // {
+            //   relativePath: "/product-ux/evpn-increase-user-renewal-rate/edit-sub-settings.png",
+            //   altText: 'Edit Subscription settings, 5k users',
+            //   caption: 'Edit Subscription settings, 5k users'
+            // },
+            // {
+            // relativePath: "/product-ux/evpn-increase-user-renewal-rate/t-45.png",
+            // altText: 'Dashboard: renewal reminder for T-45 days',
+            // caption: 'Dashboard: renewal reminder for T-45 days'
+            // },
           ],
           },
         ],
