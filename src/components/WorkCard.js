@@ -7,11 +7,12 @@ import styled from "styled-components";
 const WorkCardContainer = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: var(--primary-color-light);
+  ${"" /* background-color: var(--primary-color-light); */}
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0.5rem 0.5rem 1.2rem rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  flex: ${(props) => props.width};
 
   &:hover {
     cursor: pointer;
@@ -24,6 +25,7 @@ const ImageContainer = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(${(props) => props.image_path});
+  border: 1px solid green;
 `;
 
 const ContentContainer = styled.div`
@@ -35,6 +37,8 @@ const ContentContainer = styled.div`
   flex-direction: column;
   text-align: left;
   font-family: "Work Sans", sans-serif;
+  background-color: ${(props) => props.content_color};
+  flex: 1;
 
   h2 {
     font-size: 1.5rem;
@@ -53,9 +57,22 @@ const ContentContainer = styled.div`
     flex-wrap: wrap;
     gap: 0.5rem;
     margin-top: auto;
+
+    .ant-tag {
+      border-radius: 8px;
+      padding: 8px;
+    }
   }
 `;
-const WorkCard = ({ title, description, tags, path, image_path }) => {
+const WorkCard = ({
+  title,
+  description,
+  tags,
+  path,
+  image_path,
+  content_color,
+  width,
+}) => {
   const navigate = useNavigate();
   const handleClick = () => {
     navigate(path);
@@ -63,17 +80,12 @@ const WorkCard = ({ title, description, tags, path, image_path }) => {
   return (
     <WorkCardContainer onClick={handleClick}>
       <ImageContainer image_path={image_path} />
-      <ContentContainer>
+      <ContentContainer content_color={content_color}>
         <h2>{title}</h2>
         <p>{description}</p>
         <div className="tags">
           {tags?.map((t) => (
-            <Tag
-              key={t}
-              style={{ color: "black", borderRadius: "8px", padding: "8px" }}
-              bordered={false}
-              color={TagColors[t]}
-            >
+            <Tag key={t} bordered={false} color="#897143">
               {t}
             </Tag>
           ))}

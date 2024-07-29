@@ -9,4 +9,5 @@ export const Tags = {
   growth: "Growth Design",
   strategy: "Strategy",
   SD: "Service Design",
+  packaging: "Packaging",
 };
