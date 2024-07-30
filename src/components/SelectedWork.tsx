@@ -101,7 +101,6 @@ const SelectedWork = () => {
             path={project.path}
             image_path={project.image_path}
             content_color={project.content_color}
-            width={id % 4 === 0 ? "33%" : id % 4 === 1 ? "67%" : "50%"}
           />
         ))}
       </div>

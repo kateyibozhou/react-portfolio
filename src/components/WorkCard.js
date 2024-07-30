@@ -1,13 +1,12 @@
 import React from "react";
 import { Tag } from "antd";
 import { useNavigate } from "react-router-dom";
-import { TagColors } from "../utils/SelectedWorkTags";
+import tinycolor from "tinycolor2";
 import styled from "styled-components";
 
 const WorkCardContainer = styled.div`
   display: flex;
   flex-direction: column;
-  ${"" /* background-color: var(--primary-color-light); */}
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0.5rem 0.5rem 1.2rem rgba(0, 0, 0, 0.1);
@@ -38,6 +37,10 @@ const ContentContainer = styled.div`
   font-family: "Work Sans", sans-serif;
   background-color: ${(props) => props.content_color};
   flex: 1;
+  color: ${(props) =>
+    tinycolor(props.content_color).isDark()
+      ? ({ theme }) => theme.colors.primaryLight
+      : ({ theme }) => theme.colors.workCardDarkText};
 
   h2 {
     font-size: 1.5rem;
