@@ -25,7 +25,6 @@ const ImageContainer = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(${(props) => props.image_path});
-  border: 1px solid green;
 `;
 
 const ContentContainer = styled.div`
@@ -71,7 +70,6 @@ const WorkCard = ({
   path,
   image_path,
   content_color,
-  width,
 }) => {
   const navigate = useNavigate();
   const handleClick = () => {
