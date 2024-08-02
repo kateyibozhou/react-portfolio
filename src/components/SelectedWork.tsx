@@ -24,7 +24,7 @@ const SelectedWork = () => {
       tags: [Tags.UX, Tags.growth],
       image_path:
         "https://github.com/kateyibozhou/react-portfolio/blob/main/src/assets/images/showcase/renewal.png?raw=true",
-      path: "/increase-user-renewal-rate",
+      path: "/case-study/evpn-increase-user-renewal-rate",
       content_color: "#37383A",
     },
     {
@@ -34,7 +34,7 @@ const SelectedWork = () => {
       tags: [Tags.UX, Tags.growth],
       image_path:
         "https://github.com/kateyibozhou/react-portfolio/blob/main/src/assets/images/showcase/evpn-checkout.png?raw=true",
-      path: "/optimise-checkout-page",
+      path: "/case-study/evpn-mobile-conversion",
       content_color: "#001D2F",
     },
     {
@@ -72,7 +72,7 @@ const SelectedWork = () => {
       tags: [Tags.SD],
       image_path:
         "https://github.com/kateyibozhou/react-portfolio/blob/main/src/assets/images/showcase/evangelise.png?raw=true",
-      path: "/customer-journey-maps",
+      path: "/case-study/evpn-evangelise-customer-journey-maps",
       content_color: "#001D2F",
     },
     {
@@ -82,8 +82,15 @@ const SelectedWork = () => {
       tags: [Tags.strategy, Tags.SD],
       image_path:
         "https://github.com/kateyibozhou/react-portfolio/blob/main/src/assets/images/showcase/philips.png?raw=true",
-      path: "/philips-gtm-launch-campaign",
+      path: "/case-study/philips-gtm",
       content_color: "#001D2F",
+    },
+    {
+      title: "Philips B2B GTM launch campaign",
+      description: "Designed a workshop to develop an omni-channel campaign strategy to help Philips Air purifier enter into 2 new B2B markets.",
+      tags: [Tags.strategy, Tags.SD],
+      image_path: "https://github.com/kateyibozhou/react-portfolio/blob/main/src/assets/images/showcase/philips.png?raw=true",
+      path: "/case-study/philips-gtm",
     },
   ];
 

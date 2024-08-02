@@ -15,12 +15,13 @@
   font-size: 4rem;
   font-family: "Fraunces", serif;
   align-self: flex-start;
+  margin-bottom: 2rem;
 }
 
 .core-skills .skills-table {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 3rem;
   width: 100vw;
   box-sizing: border-box;
   padding-left: 2rem;
