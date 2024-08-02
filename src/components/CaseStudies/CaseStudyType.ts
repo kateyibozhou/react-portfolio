@@ -8,6 +8,7 @@ export interface Step {
     text: string;
     subTasks?: string[];
     images?: CaseStudyImage[];
+    videos?: CaseStudyVideo[];
   }
 
   export interface CaseStudyImage {
@@ -16,11 +17,18 @@ export interface Step {
     altText: string;
     caption: string;
   }
+
+  export interface CaseStudyVideo {
+    relativePath: string;
+    altText: string;
+    caption: string;
+  }
   
   export interface Learning {
     subLearnings?: string[];
     text?: string;
     images?: CaseStudyImage[];
+    videos?: CaseStudyVideo[];
   }
 
 // enum category of UX, Product Design, Research, Service Design, Branding & Packaging, Strategy Design, Growth Design, Illustration, Art Direction

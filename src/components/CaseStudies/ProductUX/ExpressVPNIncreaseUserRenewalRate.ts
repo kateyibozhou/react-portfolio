@@ -36,12 +36,12 @@ const evpnIncreaseUserRenewalRate: CaseStudyType = {
         ],
         process: [
           {
-            text: 'Triangulating multiple data points (from Google Analytics, Customer Journey Map screen flows and VOTC research), I convinced them to conduct the experimentation on Dashboard because of higher volumes of traffic.',
+            text: 'Triangulating multiple data points (from Google Analytics, Customer Journey Map screen flows and VOTC research), I convinced them to conduct the experimentation on Dashboard because of higher volumes of traffic:',
             images: [
               {
                 relativePath: "/product-ux/evpn-increase-user-renewal-rate/1-screen-flow.png",
-                altText: 'Initial A/B experimentation was proposed on the Edit Subscription page. I mapped out the screen flow and traffic pulled from Google Analytics to determine which page is the most optimal for experimentation.',
-                caption: 'Initial A/B experimentation was proposed on the Edit Subscription page. I mapped out the screen flow and traffic pulled from Google Analytics to determine which page is the most optimal for experimentation.'
+                altText: 'I proposed initial A/B experiment on the Edit Subscription page. I mapped out the screen flow and traffic pulled from Google Analytics to determine which page is the most optimal for experimentation.',
+                caption: 'I proposed initial A/B experiment on the Edit Subscription page. I mapped out the screen flow and traffic pulled from Google Analytics to determine which page is the most optimal for experimentation.'
               },
             ],
           },
@@ -55,7 +55,7 @@ const evpnIncreaseUserRenewalRate: CaseStudyType = {
             text: 'Looked at how users flow into websites from external sources (renewal emails) to determine what content users have been exposed to, in order to formulate optimal renewal message.',
           },
           {
-            text: 'One of the tasks was to map out renewal email to website entry points to understand user flow:',
+            text: 'Mapped out renewal email to website entry points to understand user flow:',
             // subTasks: [
             //   'Although majority of users land on Dashboard through Organic sources, I believe that majority of users are influenced by email campaigns but do not click through the email CTA into Dashboard.',
             //   'Users check their emails during their daily commute but will do in-depth research and purchase on their desktop/laptop, hence this behaviour may be detected as organic traffic.'
@@ -98,15 +98,15 @@ const evpnIncreaseUserRenewalRate: CaseStudyType = {
         ],
         process: [
           {
-            text: 'To solve the pain point of sending multiple reminders to users, I add a “Set a Reminder” as a secondary CTA so user can download an iCal reminder to remind themselves to renew closer to deadline.',
+            text: 'To reduce multiple reminders, I added a "Set a Reminder" button, letting users download a reminder to their calendar and stay on top of renewal deadlines.',
           },
           {
-            text: 'But this takes too much Dev effort for this experiment and idea was killed.',
+            text: 'But this took too much Dev effort for this experiment and idea was killed.',
             images: [
               {
               relativePath: "/product-ux/evpn-increase-user-renewal-rate/init.png",
-              altText: 'Initial design proposed solves a user pain point, but was shelved due to development effort.',
-              caption: 'Initial design proposed solves a user pain point, but was shelved due to development effort.'
+              altText: 'Initial design proposed solved a user pain point, but was shelved due to development effort.',
+              caption: 'Initial design proposed solved a user pain point, but was shelved due to development effort.'
             },
           ],
           },
@@ -126,14 +126,14 @@ const evpnIncreaseUserRenewalRate: CaseStudyType = {
               'Expired users, but within grace period',
               'Expired users',
             ],
-            images: [
+            videos: [
               {
-              relativePath: "/product-ux/evpn-increase-user-renewal-rate/final-mobile.png",
+              relativePath: "/product-ux/evpn-increase-user-renewal-rate/mobile.mp4",
               altText: 'A snapshot of the final design on mobile',
               caption: 'A snapshot of the final design on mobile'
             },
               {
-              relativePath: "/product-ux/evpn-increase-user-renewal-rate/final-desk.png",
+              relativePath: "/product-ux/evpn-increase-user-renewal-rate/desktop.mp4",
               altText: 'A snapshot of the final design on desktop',
               caption: 'A snapshot of the final design on desktop'
             },
@@ -145,7 +145,7 @@ const evpnIncreaseUserRenewalRate: CaseStudyType = {
     ],
     learnings: [
       {
-        text: 'This experiment performed better than expected. We concluded it after 7 days because it achieved significance at 95% at p-value <0.0001.',
+        text: 'This experiment performed better than expected. We concluded it after 7 days because it achieved significance at 95% at p-value \<0.0001.',
       },
       {
         text: 'What contributed to its win can be summed up below:',

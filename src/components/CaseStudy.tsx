@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import caseStudies from "./CaseStudies/CaseStudiesData";
-import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 import { CaseStudyType, CaseStudyWork } from "./CaseStudies/CaseStudyType";
 interface RouteParams {
   id: string;
@@ -214,18 +213,17 @@ const CaseStudy: React.FC = () => {
       {processItem.images &&
         processItem.images.map((image, imgIdx) => (
         <ImageContainer key={imgIdx}>
-          {image.afterPath ? (
-          <ReactCompareSlider
-            itemOne={<ReactCompareSliderImage src={require(`../assets/images/case-studies${image.relativePath}`)} alt={image.altText} />}
-            itemTwo={<ReactCompareSliderImage src={require(`../assets/images/case-studies${image.afterPath}`)} alt={image.altText} />}
-            changePositionOnHover={true}
-          />
-          ) : (
           <Image src={require(`../assets/images/case-studies${image.relativePath}`)} alt={image.altText} />
-          )}
           <Caption>{image.caption}</Caption>
         </ImageContainer>
         ))}
+        {
+          processItem.videos && processItem.videos.map((video, videoIdx) => (
+            <video key={videoIdx} controls autoPlay loop muted>
+              <source src={require(`../assets/images/case-studies${video.relativePath}`)} type="video/mov" />
+            </video>
+          ))
+        }
       </li>
     ));
   };
@@ -233,29 +231,27 @@ const CaseStudy: React.FC = () => {
   const renderLearnings = (learnings: CaseStudyWork[] | undefined) => {
     return (learnings ?? []).map((learning, index) => (
       <li key={index}>
-        <p>{learning.text}</p>
-        {learning.subTasks && (
-          <NumberedList>
-            {learning.subTasks.map((subLearning, subIdx) => (
-              <li key={subIdx}>{subLearning}</li>
-            ))}
-          </NumberedList>
-        )}
-        {learning.images &&
-          learning.images.map((image, imgIdx) => (
-            <ImageContainer key={imgIdx}>
-              {image.afterPath ? (
-                <ReactCompareSlider
-                  itemOne={<ReactCompareSliderImage src={require(`../assets/images/case-studies${image.relativePath}`)} alt={image.altText} />}
-                  itemTwo={<ReactCompareSliderImage src={require(`../assets/images/case-studies${image.afterPath}`)} alt={image.altText} />}
-                  changePositionOnHover={true}
-                />
-              ) : (
-                <Image src={require(`../assets/images/case-studies${image.relativePath}`)} alt={image.altText} />
-              )}
-              <Caption>{image.caption}</Caption>
-            </ImageContainer>
-          ))}
+      <p>{learning.text}</p>
+      {learning.subTasks && (
+        <NumberedList>
+        {learning.subTasks.map((subLearning, subIdx) => (
+          <li key={subIdx}>{subLearning}</li>
+        ))}
+        </NumberedList>
+      )}
+      {learning.images &&
+        learning.images.map((image, imgIdx) => (
+        <ImageContainer key={imgIdx}>
+          <Image src={require(`../assets/images/case-studies${image.relativePath}`)} alt={image.altText} />
+          <Caption>{image.caption}</Caption>
+        </ImageContainer>
+        ))}
+      {learning.videos &&
+        learning.videos.map((video, videoIdx) => (
+        <video key={videoIdx} controls autoPlay loop muted>
+          <source src={require(`../assets/images/case-studies${video.relativePath}`)} type="video/mov" />
+        </video>
+        ))}
       </li>
     ));
   };
