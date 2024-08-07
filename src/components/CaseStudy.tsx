@@ -73,6 +73,11 @@ const NumberedList = styled.ul`
   list-style-type: decimal;
 `;
 
+const IndentedParagraph = styled.p`
+  margin-left: 0; /* Adjust the margin as needed */
+  padding-left: 0; /* Adjust the padding as needed */
+`;
+
 const Details = styled.div`
   display: flex;
   justify-content: space-around;
@@ -139,7 +144,6 @@ const Step = styled.div`
   }
 
   ul {
-    list-style-type: disc;
     padding-left: 20px;
   }
 
@@ -181,6 +185,11 @@ const Caption = styled.p`
 const Learnings = styled.div`
   margin-top: 40px;
   max-width: 50rem;
+
+    h5 {
+    margin-top: 20px;
+    font-size: 1.2em;
+  }
 `;
 
 const CaseStudy: React.FC = () => {
@@ -199,62 +208,55 @@ const CaseStudy: React.FC = () => {
     );
   }
 
-  const renderProcess = (process: CaseStudyWork[]) => {
-    return process.map((processItem, idx) => (
-      <li key={idx}>
-      <p>{processItem.text}</p>
-      {processItem.subTasks && (
+  const renderWork = (work: CaseStudyWork[] | undefined) => {
+    return (work ?? []).map((item, index) => (
+      item.isParagraph ? (
+        <IndentedParagraph key={index}>{item.text}</IndentedParagraph>
+      ) : (
+      <li key={index}>
+      <p>{item.text}</p>
+      {item.subTasks && (
         <NumberedList>
-        {processItem.subTasks.map((subTask, subIdx) => (
-          <li key={subIdx}>{subTask}</li>
+        {item.subTasks.map((subItem, subIdx) => (
+          <li key={subIdx}>{subItem}</li>
         ))}
         </NumberedList>
       )}
-      {processItem.images &&
-        processItem.images.map((image, imgIdx) => (
+      {item.images &&
+        item.images.map((image, imgIdx) => (
         <ImageContainer key={imgIdx}>
-          <Image src={require(`../assets/images/case-studies${image.relativePath}`)} alt={image.altText} />
+          <Image
+          src={require(`../assets/images/case-studies${image.relativePath}`)}
+          alt={image.altText}
+          />
           <Caption>{image.caption}</Caption>
         </ImageContainer>
         ))}
-        {
-          processItem.videos && processItem.videos.map((video, videoIdx) => (
-            <video key={videoIdx} controls autoPlay loop muted>
-              <source src={require(`../assets/images/case-studies${video.relativePath}`)} type="video/mov" />
-            </video>
-          ))
-        }
+      {item.videos &&
+        item.videos.map((video, videoIdx) => (
+        <div key={videoIdx} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '1rem' }}>
+          <video
+          key={videoIdx}
+          controls
+          autoPlay
+          loop
+          muted
+          style={{ maxWidth: '100%', maxHeight: '60vh' }}
+          >
+          <source
+            src={require(`../assets/images/case-studies${video.relativePath}`)}
+            type="video/mp4"
+          />
+          </video>
+          <Caption>{video.caption}</Caption>
+        </div>
+        ))}
       </li>
-    ));
+    )));
   };
 
-  const renderLearnings = (learnings: CaseStudyWork[] | undefined) => {
-    return (learnings ?? []).map((learning, index) => (
-      <li key={index}>
-      <p>{learning.text}</p>
-      {learning.subTasks && (
-        <NumberedList>
-        {learning.subTasks.map((subLearning, subIdx) => (
-          <li key={subIdx}>{subLearning}</li>
-        ))}
-        </NumberedList>
-      )}
-      {learning.images &&
-        learning.images.map((image, imgIdx) => (
-        <ImageContainer key={imgIdx}>
-          <Image src={require(`../assets/images/case-studies${image.relativePath}`)} alt={image.altText} />
-          <Caption>{image.caption}</Caption>
-        </ImageContainer>
-        ))}
-      {learning.videos &&
-        learning.videos.map((video, videoIdx) => (
-        <video key={videoIdx} controls autoPlay loop muted>
-          <source src={require(`../assets/images/case-studies${video.relativePath}`)} type="video/mov" />
-        </video>
-        ))}
-      </li>
-    ));
-  };
+  const renderProcess = renderWork;
+  const renderLearnings = renderWork;
   return (
     <FullViewPortContainer>
       <OnePagerSummary>
