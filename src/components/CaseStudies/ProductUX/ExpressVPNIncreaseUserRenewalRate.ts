@@ -37,6 +37,7 @@ const evpnIncreaseUserRenewalRate: CaseStudyType = {
         process: [
           {
             text: 'Triangulating multiple data points (from Google Analytics, Customer Journey Map screen flows and VOTC research), I convinced them to conduct the experimentation on Dashboard because of higher volumes of traffic:',
+            isParagraph: true,
             images: [
               {
                 relativePath: "/product-ux/evpn-increase-user-renewal-rate/1-screen-flow.png",
