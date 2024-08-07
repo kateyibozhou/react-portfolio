@@ -1,11 +1,17 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.4cf931c9.css",
-    "main.js": "/react-portfolio/static/js/main.21938d89.js",
+    "main.css": "/react-portfolio/static/css/main.093e1117.css",
+    "main.js": "/react-portfolio/static/js/main.2866eb07.js",
     "static/js/453.1cc91022.chunk.js": "/react-portfolio/static/js/453.1cc91022.chunk.js",
+    "static/media/desktop.mp4": "/react-portfolio/static/media/desktop.048f0e0f706d5419acc4.mp4",
+    "static/media/desktop.mov": "/react-portfolio/static/media/desktop.d8f4433306e6b1c1b5fc.mov",
     "static/media/prototype.mov": "/react-portfolio/static/media/prototype.191d5fba38b59d22f37a.mov",
+    "static/media/mobile.mov": "/react-portfolio/static/media/mobile.cc3d3011bff2b927899a.mov",
+    "static/media/mobile.mp4": "/react-portfolio/static/media/mobile.f05dbdef8685217c38ea.mp4",
     "static/media/hero.png": "/react-portfolio/static/media/hero.a14a0838268a5266c495.png",
+    "static/media/2-map-renewal-email.png": "/react-portfolio/static/media/2-map-renewal-email.59b164c5f2cf15d41da4.png",
     "static/media/init.png": "/react-portfolio/static/media/init.fc2ef3d2acc1863bc4d3.png",
+    "static/media/1-screen-flow.png": "/react-portfolio/static/media/1-screen-flow.59053f927965e2459e0a.png",
     "static/media/final-desk.png": "/react-portfolio/static/media/final-desk.c3d2d41712eec1aa676f.png",
     "static/media/design-explorations.png": "/react-portfolio/static/media/design-explorations.00a59e0a6e5c981dc8ce.png",
     "static/media/order-12-3-after.png": "/react-portfolio/static/media/order-12-3-after.4f318935a654662b53cd.png",
@@ -29,12 +35,12 @@
     "static/media/UX.svg": "/react-portfolio/static/media/UX.47fdd6524fbfbf2cb26ce50a6f7fe726.svg",
     "static/media/SD.svg": "/react-portfolio/static/media/SD.35e95ce81029b30f5b6ce8e23a470829.svg",
     "index.html": "/react-portfolio/index.html",
-    "main.4cf931c9.css.map": "/react-portfolio/static/css/main.4cf931c9.css.map",
-    "main.21938d89.js.map": "/react-portfolio/static/js/main.21938d89.js.map",
+    "main.093e1117.css.map": "/react-portfolio/static/css/main.093e1117.css.map",
+    "main.2866eb07.js.map": "/react-portfolio/static/js/main.2866eb07.js.map",
     "453.1cc91022.chunk.js.map": "/react-portfolio/static/js/453.1cc91022.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4cf931c9.css",
-    "static/js/main.21938d89.js"
+    "static/css/main.093e1117.css",
+    "static/js/main.2866eb07.js"
   ]
 }
