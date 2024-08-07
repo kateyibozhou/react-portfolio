@@ -14,7 +14,7 @@ const SelectedWork = () => {
       tags: [Tags.UX],
       image_path:
         "https://github.com/kateyibozhou/react-portfolio/blob/main/src/assets/images/showcase/dashboard.png?raw=true",
-      path: "/enterprise-dashboard-mvp",
+      path: "/case-study/evpn-enterprise-dashboard",
       content_color: "#001D2F",
     },
     {
@@ -44,7 +44,7 @@ const SelectedWork = () => {
       tags: [Tags.UX],
       image_path:
         "https://github.com/kateyibozhou/react-portfolio/blob/main/src/assets/images/showcase/shell.png?raw=true",
-      path: "/shell-mobile-app",
+      path: "/case-study/shell-apac",
       content_color: "#FDE67D",
     },
     {
@@ -54,6 +54,7 @@ const SelectedWork = () => {
       tags: [Tags.packaging],
       image_path:
         "https://github.com/kateyibozhou/react-portfolio/blob/yirui/style-landing-page/src/assets/images/showcase/SK-II.jpeg?raw=true",
+      path: "/case-study/skii",
       content_color: "#FFFFFF",
     },
     {
@@ -63,6 +64,7 @@ const SelectedWork = () => {
       tags: [Tags.UX],
       image_path:
         "https://github.com/kateyibozhou/react-portfolio/blob/yirui/style-landing-page/src/assets/images/showcase/information_architecture.png?raw=true",
+      path: "/case-study/dbs-info-arch",
       content_color: "#001D2F",
     },
     {
@@ -84,13 +86,6 @@ const SelectedWork = () => {
         "https://github.com/kateyibozhou/react-portfolio/blob/main/src/assets/images/showcase/philips.png?raw=true",
       path: "/case-study/philips-gtm",
       content_color: "#001D2F",
-    },
-    {
-      title: "Philips B2B GTM launch campaign",
-      description: "Designed a workshop to develop an omni-channel campaign strategy to help Philips Air purifier enter into 2 new B2B markets.",
-      tags: [Tags.strategy, Tags.SD],
-      image_path: "https://github.com/kateyibozhou/react-portfolio/blob/main/src/assets/images/showcase/philips.png?raw=true",
-      path: "/case-study/philips-gtm",
     },
   ];
 
