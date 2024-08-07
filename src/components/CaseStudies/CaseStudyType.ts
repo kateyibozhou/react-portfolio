@@ -6,6 +6,7 @@ export interface Step {
 
   export interface CaseStudyWork {
     text: string;
+    isParagraph?: boolean;
     subTasks?: string[];
     images?: CaseStudyImage[];
     videos?: CaseStudyVideo[];
@@ -24,13 +25,6 @@ export interface Step {
     caption: string;
   }
   
-  export interface Learning {
-    subLearnings?: string[];
-    text?: string;
-    images?: CaseStudyImage[];
-    videos?: CaseStudyVideo[];
-  }
-
 // enum category of UX, Product Design, Research, Service Design, Branding & Packaging, Strategy Design, Growth Design, Illustration, Art Direction
   export enum CaseStudyCategory {
     UX = 'UX',
