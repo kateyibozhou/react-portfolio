@@ -57,15 +57,15 @@ const evpnIncreaseUserRenewalRate: CaseStudyType = {
           },
           {
             text: 'Mapped out renewal email to website entry points to understand user flow:',
-            // subTasks: [
-            //   'Although majority of users land on Dashboard through Organic sources, I believe that majority of users are influenced by email campaigns but do not click through the email CTA into Dashboard.',
-            //   'Users check their emails during their daily commute but will do in-depth research and purchase on their desktop/laptop, hence this behaviour may be detected as organic traffic.'
-            // ],
+            subTasks: [
+              'Although majority of users land on Dashboard through Organic sources, I believe that majority of users are influenced by email campaigns but do not click through the email CTA into Dashboard.',
+              'Users check their emails during their daily commute but will do in-depth research and purchase on their desktop/laptop, hence this behaviour may be detected as organic traffic.'
+            ],
             images: [
             {
             relativePath: "/product-ux/evpn-increase-user-renewal-rate/2-map-renewal-email.png",
-            altText: 'Mapping out renewal email to website entry points to understand user flow. Although majority of users land on Dashboard through Organic sources, I believe that majority of users are influenced by email campaigns but do not click through the email CTA into Dashboard. Users check their emails during their daily commute but will do indepth research and purchase on their desktop/laptop, hence this behaviour may be detected as organic traffic.',
-            caption: 'Mapping out renewal email to website entry points to understand user flow. Although majority of users land on Dashboard through Organic sources, I believe that majority of users are influenced by email campaigns but do not click through the email CTA into Dashboard. Users check their emails during their daily commute but will do indepth research and purchase on their desktop/laptop, hence this behaviour may be detected as organic traffic.'
+            altText: 'Mapping out renewal email to website entry points to understand user flow',
+            caption: 'Mapping out renewal email to website entry points to understand user flow.'
             },
             // {
             //   relativePath: "/product-ux/evpn-increase-user-renewal-rate/1-2-dash.png",
