@@ -106,7 +106,7 @@ const SelectedWork = () => {
           />
         ))}
       </div>
-      <a href="/projects" className="all-projects" data-aos="fade-up">
+      <a href="/react-portfolio/#/projects" className="all-projects" data-aos="fade-up">
         all projects <ArrowRightOutlined />
       </a>
     </section>
