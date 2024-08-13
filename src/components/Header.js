@@ -36,10 +36,10 @@ const Header = () => {
               <nav className="mobile-nav">
                 <ul>
                   <li><a href="/" onClick={toggleMenu}>Home</a></li>
-                  <li><a href="/projects" onClick={toggleMenu}>Projects</a></li>
-                  <li><a href="#about" onClick={toggleMenu}>About</a></li>
-                  <li><a href="/ZhouYiboResume.pdf" target="_blank" rel="noopener noreferrer" onClick={toggleMenu}>Resume</a></li>
-                  <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
+                  <li><a href="/react-portfolio/#/projects" onClick={toggleMenu}>Projects</a></li>
+                  <li><a href="/react-portfolio/#about" onClick={toggleMenu}>About</a></li>
+                  <li><a href="/react-portfolio/#/ZhouYiboResume.pdf" target="_blank" rel="noopener noreferrer" onClick={toggleMenu}>Resume</a></li>
+                  <li><a href="/react-portfolio/#contact" onClick={toggleMenu}>Contact</a></li>
                 </ul>
               </nav>
             </div>
@@ -48,10 +48,10 @@ const Header = () => {
       ) : (
         <nav className="desktop-nav">
           <ul>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="/ZhouYiboResume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="/react-portfolio/#/projects">Projects</a></li>
+            <li><a href="/react-portfolio/#about">About</a></li>
+            <li><a href="/react-portfolio/#/ZhouYiboResume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+            <li><a href="/react-portfolio/#contact">Contact</a></li>
           </ul>
         </nav>
       )}
